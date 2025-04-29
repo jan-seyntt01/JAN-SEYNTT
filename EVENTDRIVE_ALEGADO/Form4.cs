@@ -27,7 +27,7 @@ namespace EVENTDRIVE_ALEGADO
         public int showCount(int c, string field)
         {
             Workbook book = new Workbook();
-            book.LoadFromFile(@"C:\Users\Computer\Desktop\EVENTDRIVEN\BOOKDB.xlsx");
+            book.LoadFromFile(@"C:\Users\ACT-STUDENT\Desktop\SEYNTT\EVENTDRIVE_ALEGADO\BOOKDB.xlsx");
             Worksheet sh = book.Worksheets[0];
             int counter = 0;
             int row = sh.Rows.Length;

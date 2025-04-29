@@ -27,7 +27,7 @@ namespace EVENTDRIVE_ALEGADO
         private void btnLogin_Click(object sender, EventArgs e)
         {
             Workbook book = new Workbook();
-            book.LoadFromFile(@"C:\Users\Computer\Desktop\EVENTDRIVEN\BOOKDB.xlsx");
+            book.LoadFromFile(@"C:\Users\ACT-STUDENT\Desktop\SEYNTT\EVENTDRIVE_ALEGADO\BOOKDB.xlsx");
             Worksheet sheet = book.Worksheets[0];
             int row = sheet.Rows.Length;
             bool logs = false;
