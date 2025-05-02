@@ -22,6 +22,22 @@ namespace EVENTDRIVE_ALEGADO
             lblMaleCount.Text = showCount(2, "Male").ToString();
             lblInactiveCount.Text = showCount(13, "0").ToString();
             lblFemaleCount.Text = showCount(2, "Female").ToString();
+            lblRedCount.Text = showCount(10, "Red").ToString();
+            lblYellowCount.Text = showCount(10, "Yellow").ToString();
+            lblBlueCount.Text = showCount(10, "Blue").ToString();
+            lblOrangeCount.Text = showCount(10, "Orange").ToString();
+            lblGreenCount.Text = showCount(10, "Green").ToString();
+            lblPurpleCount.Text = showCount(10, "Purplw").ToString();
+            lblBlackCount.Text = showCount(10, "Black").ToString();
+            lblBasketballCount.Text = showCount(9, "Basketball").ToString();
+            lblVolleyballCount.Text = showCount(9, "Volleyball").ToString();
+            lblSoccerCount.Text = showCount(9, "Soccer").ToString();
+            lblBSITCount.Text = showCount(12, "BSIT").ToString();
+            lblBEEDCount.Text = showCount(12, "BEED").ToString();
+            lblBSCSCount.Text = showCount(12, "BSCS").ToString();
+            lblBSCPECount.Text = showCount(12, "BSCPE").ToString();
+            lblBSHMCount.Text = showCount(12, "BSHM").ToString();
+            lblBSTMCount.Text = showCount(12, "BSTM").ToString();
         }
        
         public int showCount(int c, string field)

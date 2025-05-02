@@ -31,11 +31,11 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form4));
             this.btnNew = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
+            this.lblBEEDCount = new System.Windows.Forms.Label();
+            this.lblBEED = new System.Windows.Forms.Label();
+            this.lblBSITCount = new System.Windows.Forms.Label();
+            this.lblCourse = new System.Windows.Forms.Label();
+            this.lblBSIT = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.lblFemaleCount = new System.Windows.Forms.Label();
             this.lblMaleCount = new System.Windows.Forms.Label();
@@ -43,17 +43,17 @@
             this.lblMale = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
+            this.lblVolleyballCount = new System.Windows.Forms.Label();
+            this.lblVolleyball = new System.Windows.Forms.Label();
+            this.lblBasketballCount = new System.Windows.Forms.Label();
+            this.lblHobbies = new System.Windows.Forms.Label();
+            this.lblBasketball = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
+            this.lblYellowCount = new System.Windows.Forms.Label();
+            this.lblRedCount = new System.Windows.Forms.Label();
+            this.lblYellow = new System.Windows.Forms.Label();
+            this.lblRed = new System.Windows.Forms.Label();
+            this.lblColor = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.lblInactiveCount = new System.Windows.Forms.Label();
             this.lblInactiveStudent = new System.Windows.Forms.Label();
@@ -69,6 +69,26 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lblBlue = new System.Windows.Forms.Label();
+            this.lblOrange = new System.Windows.Forms.Label();
+            this.lblGreen = new System.Windows.Forms.Label();
+            this.lblPurple = new System.Windows.Forms.Label();
+            this.lblBlack = new System.Windows.Forms.Label();
+            this.lblBlueCount = new System.Windows.Forms.Label();
+            this.lblOrangeCount = new System.Windows.Forms.Label();
+            this.lblGreenCount = new System.Windows.Forms.Label();
+            this.lblPurpleCount = new System.Windows.Forms.Label();
+            this.lblBlackCount = new System.Windows.Forms.Label();
+            this.lblSoccer = new System.Windows.Forms.Label();
+            this.lblSoccerCount = new System.Windows.Forms.Label();
+            this.lblBSCS = new System.Windows.Forms.Label();
+            this.lblBSCPE = new System.Windows.Forms.Label();
+            this.lblBSHM = new System.Windows.Forms.Label();
+            this.lblBSTM = new System.Windows.Forms.Label();
+            this.lblBSCSCount = new System.Windows.Forms.Label();
+            this.lblBSCPECount = new System.Windows.Forms.Label();
+            this.lblBSHMCount = new System.Windows.Forms.Label();
+            this.lblBSTMCount = new System.Windows.Forms.Label();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -93,65 +113,73 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.panel5.Controls.Add(this.label26);
-            this.panel5.Controls.Add(this.label20);
-            this.panel5.Controls.Add(this.label27);
-            this.panel5.Controls.Add(this.label15);
-            this.panel5.Controls.Add(this.label21);
-            this.panel5.Location = new System.Drawing.Point(620, 247);
+            this.panel5.Controls.Add(this.lblBSTMCount);
+            this.panel5.Controls.Add(this.lblBSHMCount);
+            this.panel5.Controls.Add(this.lblBSCPECount);
+            this.panel5.Controls.Add(this.lblBSCSCount);
+            this.panel5.Controls.Add(this.lblBSTM);
+            this.panel5.Controls.Add(this.lblBSHM);
+            this.panel5.Controls.Add(this.lblBSCPE);
+            this.panel5.Controls.Add(this.lblBSCS);
+            this.panel5.Controls.Add(this.lblBEEDCount);
+            this.panel5.Controls.Add(this.lblBEED);
+            this.panel5.Controls.Add(this.lblBSITCount);
+            this.panel5.Controls.Add(this.lblCourse);
+            this.panel5.Controls.Add(this.lblBSIT);
+            this.panel5.Location = new System.Drawing.Point(620, 242);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(155, 189);
+            this.panel5.Size = new System.Drawing.Size(155, 279);
             this.panel5.TabIndex = 14;
             // 
-            // label26
+            // lblBEEDCount
             // 
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(103, 89);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(35, 18);
-            this.label26.TabIndex = 19;
-            this.label26.Text = "200";
+            this.lblBEEDCount.AutoSize = true;
+            this.lblBEEDCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBEEDCount.Location = new System.Drawing.Point(103, 81);
+            this.lblBEEDCount.Name = "lblBEEDCount";
+            this.lblBEEDCount.Size = new System.Drawing.Size(35, 18);
+            this.lblBEEDCount.TabIndex = 19;
+            this.lblBEEDCount.Text = "200";
             // 
-            // label20
+            // lblBEED
             // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(12, 91);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(48, 16);
-            this.label20.TabIndex = 16;
-            this.label20.Text = "BEED";
+            this.lblBEED.AutoSize = true;
+            this.lblBEED.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBEED.Location = new System.Drawing.Point(12, 83);
+            this.lblBEED.Name = "lblBEED";
+            this.lblBEED.Size = new System.Drawing.Size(48, 16);
+            this.lblBEED.TabIndex = 16;
+            this.lblBEED.Text = "BEED";
             // 
-            // label27
+            // lblBSITCount
             // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.Location = new System.Drawing.Point(103, 49);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(35, 18);
-            this.label27.TabIndex = 18;
-            this.label27.Text = "500";
+            this.lblBSITCount.AutoSize = true;
+            this.lblBSITCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBSITCount.Location = new System.Drawing.Point(103, 41);
+            this.lblBSITCount.Name = "lblBSITCount";
+            this.lblBSITCount.Size = new System.Drawing.Size(35, 18);
+            this.lblBSITCount.TabIndex = 18;
+            this.lblBSITCount.Text = "500";
             // 
-            // label15
+            // lblCourse
             // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(49, 11);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(56, 16);
-            this.label15.TabIndex = 12;
-            this.label15.Text = "Course";
+            this.lblCourse.AutoSize = true;
+            this.lblCourse.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCourse.Location = new System.Drawing.Point(49, 11);
+            this.lblCourse.Name = "lblCourse";
+            this.lblCourse.Size = new System.Drawing.Size(56, 16);
+            this.lblCourse.TabIndex = 12;
+            this.lblCourse.Text = "Course";
             // 
-            // label21
+            // lblBSIT
             // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(12, 51);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(41, 16);
-            this.label21.TabIndex = 15;
-            this.label21.Text = "BSIT";
+            this.lblBSIT.AutoSize = true;
+            this.lblBSIT.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBSIT.Location = new System.Drawing.Point(12, 43);
+            this.lblBSIT.Name = "lblBSIT";
+            this.lblBSIT.Size = new System.Drawing.Size(41, 16);
+            this.lblBSIT.TabIndex = 15;
+            this.lblBSIT.Text = "BSIT";
             // 
             // panel4
             // 
@@ -219,128 +247,140 @@
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.panel6.Controls.Add(this.label24);
-            this.panel6.Controls.Add(this.label18);
-            this.panel6.Controls.Add(this.label25);
-            this.panel6.Controls.Add(this.label14);
-            this.panel6.Controls.Add(this.label19);
-            this.panel6.Location = new System.Drawing.Point(444, 247);
+            this.panel6.Controls.Add(this.lblSoccerCount);
+            this.panel6.Controls.Add(this.lblSoccer);
+            this.panel6.Controls.Add(this.lblVolleyballCount);
+            this.panel6.Controls.Add(this.lblVolleyball);
+            this.panel6.Controls.Add(this.lblBasketballCount);
+            this.panel6.Controls.Add(this.lblHobbies);
+            this.panel6.Controls.Add(this.lblBasketball);
+            this.panel6.Location = new System.Drawing.Point(444, 242);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(155, 189);
+            this.panel6.Size = new System.Drawing.Size(155, 279);
             this.panel6.TabIndex = 13;
             // 
-            // label24
+            // lblVolleyballCount
             // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.Location = new System.Drawing.Point(103, 89);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(35, 18);
-            this.label24.TabIndex = 17;
-            this.label24.Text = "500";
+            this.lblVolleyballCount.AutoSize = true;
+            this.lblVolleyballCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVolleyballCount.Location = new System.Drawing.Point(103, 81);
+            this.lblVolleyballCount.Name = "lblVolleyballCount";
+            this.lblVolleyballCount.Size = new System.Drawing.Size(35, 18);
+            this.lblVolleyballCount.TabIndex = 17;
+            this.lblVolleyballCount.Text = "500";
             // 
-            // label18
+            // lblVolleyball
             // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(12, 91);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(73, 16);
-            this.label18.TabIndex = 14;
-            this.label18.Text = "Volleybal";
+            this.lblVolleyball.AutoSize = true;
+            this.lblVolleyball.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVolleyball.Location = new System.Drawing.Point(12, 83);
+            this.lblVolleyball.Name = "lblVolleyball";
+            this.lblVolleyball.Size = new System.Drawing.Size(73, 16);
+            this.lblVolleyball.TabIndex = 14;
+            this.lblVolleyball.Text = "Volleybal";
             // 
-            // label25
+            // lblBasketballCount
             // 
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(103, 49);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(35, 18);
-            this.label25.TabIndex = 16;
-            this.label25.Text = "200";
+            this.lblBasketballCount.AutoSize = true;
+            this.lblBasketballCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBasketballCount.Location = new System.Drawing.Point(103, 41);
+            this.lblBasketballCount.Name = "lblBasketballCount";
+            this.lblBasketballCount.Size = new System.Drawing.Size(35, 18);
+            this.lblBasketballCount.TabIndex = 16;
+            this.lblBasketballCount.Text = "200";
             // 
-            // label14
+            // lblHobbies
             // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(46, 11);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(66, 16);
-            this.label14.TabIndex = 11;
-            this.label14.Text = "Hobbies";
+            this.lblHobbies.AutoSize = true;
+            this.lblHobbies.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHobbies.Location = new System.Drawing.Point(46, 11);
+            this.lblHobbies.Name = "lblHobbies";
+            this.lblHobbies.Size = new System.Drawing.Size(66, 16);
+            this.lblHobbies.TabIndex = 11;
+            this.lblHobbies.Text = "Hobbies";
             // 
-            // label19
+            // lblBasketball
             // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(12, 51);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(81, 16);
-            this.label19.TabIndex = 13;
-            this.label19.Text = "Basketball";
+            this.lblBasketball.AutoSize = true;
+            this.lblBasketball.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBasketball.Location = new System.Drawing.Point(12, 43);
+            this.lblBasketball.Name = "lblBasketball";
+            this.lblBasketball.Size = new System.Drawing.Size(81, 16);
+            this.lblBasketball.TabIndex = 13;
+            this.lblBasketball.Text = "Basketball";
             // 
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.panel7.Controls.Add(this.label23);
-            this.panel7.Controls.Add(this.label22);
-            this.panel7.Controls.Add(this.label17);
-            this.panel7.Controls.Add(this.label16);
-            this.panel7.Controls.Add(this.label13);
-            this.panel7.Location = new System.Drawing.Point(270, 247);
+            this.panel7.Controls.Add(this.lblBlackCount);
+            this.panel7.Controls.Add(this.lblPurpleCount);
+            this.panel7.Controls.Add(this.lblGreenCount);
+            this.panel7.Controls.Add(this.lblOrangeCount);
+            this.panel7.Controls.Add(this.lblBlueCount);
+            this.panel7.Controls.Add(this.lblBlack);
+            this.panel7.Controls.Add(this.lblPurple);
+            this.panel7.Controls.Add(this.lblGreen);
+            this.panel7.Controls.Add(this.lblOrange);
+            this.panel7.Controls.Add(this.lblBlue);
+            this.panel7.Controls.Add(this.lblYellowCount);
+            this.panel7.Controls.Add(this.lblRedCount);
+            this.panel7.Controls.Add(this.lblYellow);
+            this.panel7.Controls.Add(this.lblRed);
+            this.panel7.Controls.Add(this.lblColor);
+            this.panel7.Location = new System.Drawing.Point(270, 242);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(155, 189);
+            this.panel7.Size = new System.Drawing.Size(155, 279);
             this.panel7.TabIndex = 12;
             // 
-            // label23
+            // lblYellowCount
             // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(103, 89);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(35, 18);
-            this.label23.TabIndex = 15;
-            this.label23.Text = "700";
+            this.lblYellowCount.AutoSize = true;
+            this.lblYellowCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblYellowCount.Location = new System.Drawing.Point(103, 75);
+            this.lblYellowCount.Name = "lblYellowCount";
+            this.lblYellowCount.Size = new System.Drawing.Size(35, 18);
+            this.lblYellowCount.TabIndex = 15;
+            this.lblYellowCount.Text = "700";
             // 
-            // label22
+            // lblRedCount
             // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(103, 49);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(35, 18);
-            this.label22.TabIndex = 14;
-            this.label22.Text = "100";
+            this.lblRedCount.AutoSize = true;
+            this.lblRedCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRedCount.Location = new System.Drawing.Point(103, 41);
+            this.lblRedCount.Name = "lblRedCount";
+            this.lblRedCount.Size = new System.Drawing.Size(35, 18);
+            this.lblRedCount.TabIndex = 14;
+            this.lblRedCount.Text = "100";
             // 
-            // label17
+            // lblYellow
             // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(12, 91);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(38, 16);
-            this.label17.TabIndex = 12;
-            this.label17.Text = "Blue";
+            this.lblYellow.AutoSize = true;
+            this.lblYellow.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblYellow.Location = new System.Drawing.Point(12, 77);
+            this.lblYellow.Name = "lblYellow";
+            this.lblYellow.Size = new System.Drawing.Size(53, 16);
+            this.lblYellow.TabIndex = 12;
+            this.lblYellow.Text = "Yellow";
             // 
-            // label16
+            // lblRed
             // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(12, 51);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(36, 16);
-            this.label16.TabIndex = 11;
-            this.label16.Text = "Red";
+            this.lblRed.AutoSize = true;
+            this.lblRed.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRed.Location = new System.Drawing.Point(12, 43);
+            this.lblRed.Name = "lblRed";
+            this.lblRed.Size = new System.Drawing.Size(36, 16);
+            this.lblRed.TabIndex = 11;
+            this.lblRed.Text = "Red";
             // 
-            // label13
+            // lblColor
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(54, 11);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(44, 16);
-            this.label13.TabIndex = 10;
-            this.label13.Text = "Color";
+            this.lblColor.AutoSize = true;
+            this.lblColor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblColor.Location = new System.Drawing.Point(54, 11);
+            this.lblColor.Name = "lblColor";
+            this.lblColor.Size = new System.Drawing.Size(44, 16);
+            this.lblColor.TabIndex = 10;
+            this.lblColor.Text = "Color";
             // 
             // panel3
             // 
@@ -502,6 +542,206 @@
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
+            // lblBlue
+            // 
+            this.lblBlue.AutoSize = true;
+            this.lblBlue.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBlue.Location = new System.Drawing.Point(12, 111);
+            this.lblBlue.Name = "lblBlue";
+            this.lblBlue.Size = new System.Drawing.Size(38, 16);
+            this.lblBlue.TabIndex = 16;
+            this.lblBlue.Text = "Blue";
+            // 
+            // lblOrange
+            // 
+            this.lblOrange.AutoSize = true;
+            this.lblOrange.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOrange.Location = new System.Drawing.Point(12, 145);
+            this.lblOrange.Name = "lblOrange";
+            this.lblOrange.Size = new System.Drawing.Size(58, 16);
+            this.lblOrange.TabIndex = 17;
+            this.lblOrange.Text = "Orange";
+            // 
+            // lblGreen
+            // 
+            this.lblGreen.AutoSize = true;
+            this.lblGreen.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGreen.Location = new System.Drawing.Point(12, 179);
+            this.lblGreen.Name = "lblGreen";
+            this.lblGreen.Size = new System.Drawing.Size(49, 16);
+            this.lblGreen.TabIndex = 18;
+            this.lblGreen.Text = "Green";
+            // 
+            // lblPurple
+            // 
+            this.lblPurple.AutoSize = true;
+            this.lblPurple.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPurple.Location = new System.Drawing.Point(12, 213);
+            this.lblPurple.Name = "lblPurple";
+            this.lblPurple.Size = new System.Drawing.Size(52, 16);
+            this.lblPurple.TabIndex = 19;
+            this.lblPurple.Text = "Purple";
+            // 
+            // lblBlack
+            // 
+            this.lblBlack.AutoSize = true;
+            this.lblBlack.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBlack.Location = new System.Drawing.Point(12, 247);
+            this.lblBlack.Name = "lblBlack";
+            this.lblBlack.Size = new System.Drawing.Size(63, 16);
+            this.lblBlack.TabIndex = 20;
+            this.lblBlack.Text = "lblBlack";
+            // 
+            // lblBlueCount
+            // 
+            this.lblBlueCount.AutoSize = true;
+            this.lblBlueCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBlueCount.Location = new System.Drawing.Point(103, 109);
+            this.lblBlueCount.Name = "lblBlueCount";
+            this.lblBlueCount.Size = new System.Drawing.Size(35, 18);
+            this.lblBlueCount.TabIndex = 21;
+            this.lblBlueCount.Text = "700";
+            // 
+            // lblOrangeCount
+            // 
+            this.lblOrangeCount.AutoSize = true;
+            this.lblOrangeCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOrangeCount.Location = new System.Drawing.Point(103, 143);
+            this.lblOrangeCount.Name = "lblOrangeCount";
+            this.lblOrangeCount.Size = new System.Drawing.Size(35, 18);
+            this.lblOrangeCount.TabIndex = 22;
+            this.lblOrangeCount.Text = "700";
+            // 
+            // lblGreenCount
+            // 
+            this.lblGreenCount.AutoSize = true;
+            this.lblGreenCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGreenCount.Location = new System.Drawing.Point(103, 177);
+            this.lblGreenCount.Name = "lblGreenCount";
+            this.lblGreenCount.Size = new System.Drawing.Size(35, 18);
+            this.lblGreenCount.TabIndex = 23;
+            this.lblGreenCount.Text = "700";
+            // 
+            // lblPurpleCount
+            // 
+            this.lblPurpleCount.AutoSize = true;
+            this.lblPurpleCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPurpleCount.Location = new System.Drawing.Point(103, 211);
+            this.lblPurpleCount.Name = "lblPurpleCount";
+            this.lblPurpleCount.Size = new System.Drawing.Size(35, 18);
+            this.lblPurpleCount.TabIndex = 24;
+            this.lblPurpleCount.Text = "700";
+            // 
+            // lblBlackCount
+            // 
+            this.lblBlackCount.AutoSize = true;
+            this.lblBlackCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBlackCount.Location = new System.Drawing.Point(103, 245);
+            this.lblBlackCount.Name = "lblBlackCount";
+            this.lblBlackCount.Size = new System.Drawing.Size(35, 18);
+            this.lblBlackCount.TabIndex = 25;
+            this.lblBlackCount.Text = "700";
+            // 
+            // lblSoccer
+            // 
+            this.lblSoccer.AutoSize = true;
+            this.lblSoccer.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSoccer.Location = new System.Drawing.Point(12, 123);
+            this.lblSoccer.Name = "lblSoccer";
+            this.lblSoccer.Size = new System.Drawing.Size(56, 16);
+            this.lblSoccer.TabIndex = 18;
+            this.lblSoccer.Text = "Soccer";
+            // 
+            // lblSoccerCount
+            // 
+            this.lblSoccerCount.AutoSize = true;
+            this.lblSoccerCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSoccerCount.Location = new System.Drawing.Point(103, 121);
+            this.lblSoccerCount.Name = "lblSoccerCount";
+            this.lblSoccerCount.Size = new System.Drawing.Size(35, 18);
+            this.lblSoccerCount.TabIndex = 19;
+            this.lblSoccerCount.Text = "500";
+            // 
+            // lblBSCS
+            // 
+            this.lblBSCS.AutoSize = true;
+            this.lblBSCS.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBSCS.Location = new System.Drawing.Point(12, 123);
+            this.lblBSCS.Name = "lblBSCS";
+            this.lblBSCS.Size = new System.Drawing.Size(47, 16);
+            this.lblBSCS.TabIndex = 20;
+            this.lblBSCS.Text = "BSCS";
+            // 
+            // lblBSCPE
+            // 
+            this.lblBSCPE.AutoSize = true;
+            this.lblBSCPE.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBSCPE.Location = new System.Drawing.Point(12, 163);
+            this.lblBSCPE.Name = "lblBSCPE";
+            this.lblBSCPE.Size = new System.Drawing.Size(57, 16);
+            this.lblBSCPE.TabIndex = 21;
+            this.lblBSCPE.Text = "BSCPE";
+            // 
+            // lblBSHM
+            // 
+            this.lblBSHM.AutoSize = true;
+            this.lblBSHM.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBSHM.Location = new System.Drawing.Point(12, 203);
+            this.lblBSHM.Name = "lblBSHM";
+            this.lblBSHM.Size = new System.Drawing.Size(50, 16);
+            this.lblBSHM.TabIndex = 22;
+            this.lblBSHM.Text = "BSHM";
+            // 
+            // lblBSTM
+            // 
+            this.lblBSTM.AutoSize = true;
+            this.lblBSTM.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBSTM.Location = new System.Drawing.Point(12, 243);
+            this.lblBSTM.Name = "lblBSTM";
+            this.lblBSTM.Size = new System.Drawing.Size(49, 16);
+            this.lblBSTM.TabIndex = 23;
+            this.lblBSTM.Text = "BSTM";
+            // 
+            // lblBSCSCount
+            // 
+            this.lblBSCSCount.AutoSize = true;
+            this.lblBSCSCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBSCSCount.Location = new System.Drawing.Point(103, 121);
+            this.lblBSCSCount.Name = "lblBSCSCount";
+            this.lblBSCSCount.Size = new System.Drawing.Size(35, 18);
+            this.lblBSCSCount.TabIndex = 24;
+            this.lblBSCSCount.Text = "200";
+            // 
+            // lblBSCPECount
+            // 
+            this.lblBSCPECount.AutoSize = true;
+            this.lblBSCPECount.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBSCPECount.Location = new System.Drawing.Point(103, 161);
+            this.lblBSCPECount.Name = "lblBSCPECount";
+            this.lblBSCPECount.Size = new System.Drawing.Size(35, 18);
+            this.lblBSCPECount.TabIndex = 25;
+            this.lblBSCPECount.Text = "200";
+            // 
+            // lblBSHMCount
+            // 
+            this.lblBSHMCount.AutoSize = true;
+            this.lblBSHMCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBSHMCount.Location = new System.Drawing.Point(103, 201);
+            this.lblBSHMCount.Name = "lblBSHMCount";
+            this.lblBSHMCount.Size = new System.Drawing.Size(35, 18);
+            this.lblBSHMCount.TabIndex = 26;
+            this.lblBSHMCount.Text = "200";
+            // 
+            // lblBSTMCount
+            // 
+            this.lblBSTMCount.AutoSize = true;
+            this.lblBSTMCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBSTMCount.Location = new System.Drawing.Point(103, 241);
+            this.lblBSTMCount.Name = "lblBSTMCount";
+            this.lblBSTMCount.Size = new System.Drawing.Size(35, 18);
+            this.lblBSTMCount.TabIndex = 27;
+            this.lblBSTMCount.Text = "200";
+            // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -543,11 +783,11 @@
 
         private System.Windows.Forms.Button btnNew;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label lblBEEDCount;
+        private System.Windows.Forms.Label lblBEED;
+        private System.Windows.Forms.Label lblBSITCount;
+        private System.Windows.Forms.Label lblCourse;
+        private System.Windows.Forms.Label lblBSIT;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label lblFemaleCount;
         private System.Windows.Forms.Label lblMaleCount;
@@ -555,17 +795,17 @@
         private System.Windows.Forms.Label lblMale;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label lblVolleyballCount;
+        private System.Windows.Forms.Label lblVolleyball;
+        private System.Windows.Forms.Label lblBasketballCount;
+        private System.Windows.Forms.Label lblHobbies;
+        private System.Windows.Forms.Label lblBasketball;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label lblYellowCount;
+        private System.Windows.Forms.Label lblRedCount;
+        private System.Windows.Forms.Label lblYellow;
+        private System.Windows.Forms.Label lblRed;
+        private System.Windows.Forms.Label lblColor;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label lblInactiveCount;
         private System.Windows.Forms.Label lblInactiveStudent;
@@ -581,5 +821,25 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label lblBlack;
+        private System.Windows.Forms.Label lblPurple;
+        private System.Windows.Forms.Label lblGreen;
+        private System.Windows.Forms.Label lblOrange;
+        private System.Windows.Forms.Label lblBlue;
+        private System.Windows.Forms.Label lblBlackCount;
+        private System.Windows.Forms.Label lblPurpleCount;
+        private System.Windows.Forms.Label lblGreenCount;
+        private System.Windows.Forms.Label lblOrangeCount;
+        private System.Windows.Forms.Label lblBlueCount;
+        private System.Windows.Forms.Label lblSoccerCount;
+        private System.Windows.Forms.Label lblSoccer;
+        private System.Windows.Forms.Label lblBSHM;
+        private System.Windows.Forms.Label lblBSCPE;
+        private System.Windows.Forms.Label lblBSCS;
+        private System.Windows.Forms.Label lblBSTMCount;
+        private System.Windows.Forms.Label lblBSHMCount;
+        private System.Windows.Forms.Label lblBSCPECount;
+        private System.Windows.Forms.Label lblBSCSCount;
+        private System.Windows.Forms.Label lblBSTM;
     }
 }
