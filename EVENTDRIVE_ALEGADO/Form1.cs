@@ -208,5 +208,14 @@ namespace EVENTDRIVE_ALEGADO
             string[] d = dtpBirthday.Text.ToString().Split(',');
             txtAge.Text = (2025 - Convert.ToInt32(d[2])).ToString();
         }
+
+        private void btnBrowse_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog d = new OpenFileDialog();
+            if(d.ShowDialog()  == DialogResult.OK)
+            {
+                txtBrowse.Text = d.FileName;    
+            }
+        }
     }
 }
