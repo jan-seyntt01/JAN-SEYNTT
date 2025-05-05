@@ -13,6 +13,7 @@ namespace EVENTDRIVE_ALEGADO
 {
     public partial class Form2 : Form
     {
+      
         public Form2()
         {
             InitializeComponent();
@@ -115,9 +116,9 @@ namespace EVENTDRIVE_ALEGADO
 
         private void dtgInfo_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            Form1 f1 = new Form1();
             int r = dtgInfo.CurrentCell.RowIndex;
-            Form1 f1 = (Form1)Application.OpenForms["Form1"];
+            //Form1 f1 = (Form1)Application.OpenForms["Form1"];
             f1.lblInfo.Text = r.ToString();
             f1.txtName.Text = dtgInfo.Rows[r].Cells[0].Value.ToString();
             string gender = dtgInfo.Rows[r].Cells[1].Value.ToString();
@@ -172,17 +173,18 @@ namespace EVENTDRIVE_ALEGADO
                 Worksheet sh = book.Worksheets[0];
                 int row = dtgInfo.CurrentCell.RowIndex + 2;
 
-                if (sh.Range[row, 13].Value == "0")
-                {
-                    this.showStudent("1");
-                }
-                else
-                {
-                    this.showStudent("0");
-                }
+                sh.Range[row, 13].Value = "0";
+                this.showStudent("1");
 
-                //sh.Range[row, 13].Value = "0";
-                //this.showStudent("1");
+                //if(sh.Range[row, 13].Value == "0")
+                //{
+                //    this.showStudent("1");
+                //}
+                //else
+                //{
+                //    this.showStudent("0");
+                //}
+
 
 
 

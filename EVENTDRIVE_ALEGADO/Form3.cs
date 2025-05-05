@@ -31,37 +31,41 @@ namespace EVENTDRIVE_ALEGADO
             Worksheet sheet = book.Worksheets[0];
             int row = sheet.Rows.Length;
             bool logs = false;
-            for (int i = 2; i <= row; i++)
-            {
-                if (sheet.Range[i, 7].Value == txtUsername.Text && sheet.Range[i, 8].Value == txtPassword.Text)
-                {
-                   
-                    log.insertLogs(txtUsername.Text, txtUsername.Text + " logged in");
-                    logs = true;
-                    break;
-                }
-                else
-                {
-                    logs = false;
-                }
-            }
-            if (logs == true)
-            {
-                MessageBox.Show("You've succressfully login!", "Notice!", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                Form4 f1 = new Form4();
-                f1.Show();
-                this.Hide();
-
-            }
-            else if (string.IsNullOrEmpty(txtUsername.Text) || string.IsNullOrEmpty(txtPassword.Text))
+            if (string.IsNullOrEmpty(txtUsername.Text) || string.IsNullOrEmpty(txtPassword.Text))
             {
                 MessageBox.Show("Required fields!", "Notice!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            else
-            {
-                MessageBox.Show("Incorrect username or password. Please try again!", "Notice!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            else {
+                for (int i = 2; i <= row; i++)
+                {
+                    if (sheet.Range[i, 7].Value == txtUsername.Text && sheet.Range[i, 8].Value == txtPassword.Text)
+                    {
 
+                        log.insertLogs(txtUsername.Text, txtUsername.Text + " logged in");
+                        logs = true;
+                        break;
+                    }
+                    else
+                    {
+                        logs = false;
+                    }
+
+
+                }
+                if (logs == true)
+                {
+                    MessageBox.Show("You've succressfully login!", "Notice!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    Form4 f1 = new Form4();
+                    f1.Show();
+                    this.Hide();
+
+                } else { 
+                
+                    MessageBox.Show("Incorrect username or password. Please try again!", "Notice!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
+            
+          
         }
 
         private void chkshowpassword_CheckedChanged(object sender, EventArgs e)
