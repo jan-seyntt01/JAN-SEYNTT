@@ -46,19 +46,19 @@ namespace EVENTDRIVE_ALEGADO
                         errors += c.Name + " is empty";
                     }
                 }
-                if (c is DateTimePicker)
-                {
+                //if (c is DateTimePicker)
+                //{
                    
-                    if (c is DateTimePicker dateTimePicker)
-                    {
+                //    if (c is DateTimePicker dateTimePicker)
+                //    {
                         
-                        if (dateTimePicker.Value.Date == DateTime.Today) 
-                        {
-                            errors += c.Name + " is not selected\n";
+                //        if (dateTimePicker.Value.Date == DateTime.Today) 
+                //        {
+                //            errors += c.Name + " is not selected\n";
                             
-                        }
-                    }
-                }
+                //        }
+                //    }
+                //}
             }
             return errors;
         }
