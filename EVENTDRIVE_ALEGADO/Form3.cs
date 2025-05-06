@@ -14,6 +14,7 @@ namespace EVENTDRIVE_ALEGADO
     public partial class Form3 : Form
     {
         Mylogs log = new Mylogs();
+        Form4 f4 = new Form4();
         public Form3()
         {
             InitializeComponent();
@@ -40,7 +41,8 @@ namespace EVENTDRIVE_ALEGADO
                 {
                     if (sheet.Range[i, 7].Value == txtUsername.Text && sheet.Range[i, 8].Value == txtPassword.Text)
                     {
-
+                        f4.lblName.Text = sheet[i, 1].Value;
+                        //f4.picPicture.Image = Image.FromFile(@"" + sheet.Range[i])
                         log.insertLogs(txtUsername.Text, txtUsername.Text + " logged in");
                         logs = true;
                         break;

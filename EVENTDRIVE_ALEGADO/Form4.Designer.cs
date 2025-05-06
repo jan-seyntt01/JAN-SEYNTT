@@ -31,6 +31,14 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form4));
             this.btnNew = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.lblBSTMCount = new System.Windows.Forms.Label();
+            this.lblBSHMCount = new System.Windows.Forms.Label();
+            this.lblBSCPECount = new System.Windows.Forms.Label();
+            this.lblBSCSCount = new System.Windows.Forms.Label();
+            this.lblBSTM = new System.Windows.Forms.Label();
+            this.lblBSHM = new System.Windows.Forms.Label();
+            this.lblBSCPE = new System.Windows.Forms.Label();
+            this.lblBSCS = new System.Windows.Forms.Label();
             this.lblBEEDCount = new System.Windows.Forms.Label();
             this.lblBEED = new System.Windows.Forms.Label();
             this.lblBSITCount = new System.Windows.Forms.Label();
@@ -43,12 +51,24 @@
             this.lblMale = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.lblSoccerCount = new System.Windows.Forms.Label();
+            this.lblSoccer = new System.Windows.Forms.Label();
             this.lblVolleyballCount = new System.Windows.Forms.Label();
             this.lblVolleyball = new System.Windows.Forms.Label();
             this.lblBasketballCount = new System.Windows.Forms.Label();
             this.lblHobbies = new System.Windows.Forms.Label();
             this.lblBasketball = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.lblBlackCount = new System.Windows.Forms.Label();
+            this.lblPurpleCount = new System.Windows.Forms.Label();
+            this.lblGreenCount = new System.Windows.Forms.Label();
+            this.lblOrangeCount = new System.Windows.Forms.Label();
+            this.lblBlueCount = new System.Windows.Forms.Label();
+            this.lblBlack = new System.Windows.Forms.Label();
+            this.lblPurple = new System.Windows.Forms.Label();
+            this.lblGreen = new System.Windows.Forms.Label();
+            this.lblOrange = new System.Windows.Forms.Label();
+            this.lblBlue = new System.Windows.Forms.Label();
             this.lblYellowCount = new System.Windows.Forms.Label();
             this.lblRedCount = new System.Windows.Forms.Label();
             this.lblYellow = new System.Windows.Forms.Label();
@@ -67,28 +87,8 @@
             this.btnActiveStatus = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.lblBlue = new System.Windows.Forms.Label();
-            this.lblOrange = new System.Windows.Forms.Label();
-            this.lblGreen = new System.Windows.Forms.Label();
-            this.lblPurple = new System.Windows.Forms.Label();
-            this.lblBlack = new System.Windows.Forms.Label();
-            this.lblBlueCount = new System.Windows.Forms.Label();
-            this.lblOrangeCount = new System.Windows.Forms.Label();
-            this.lblGreenCount = new System.Windows.Forms.Label();
-            this.lblPurpleCount = new System.Windows.Forms.Label();
-            this.lblBlackCount = new System.Windows.Forms.Label();
-            this.lblSoccer = new System.Windows.Forms.Label();
-            this.lblSoccerCount = new System.Windows.Forms.Label();
-            this.lblBSCS = new System.Windows.Forms.Label();
-            this.lblBSCPE = new System.Windows.Forms.Label();
-            this.lblBSHM = new System.Windows.Forms.Label();
-            this.lblBSTM = new System.Windows.Forms.Label();
-            this.lblBSCSCount = new System.Windows.Forms.Label();
-            this.lblBSCPECount = new System.Windows.Forms.Label();
-            this.lblBSHMCount = new System.Windows.Forms.Label();
-            this.lblBSTMCount = new System.Windows.Forms.Label();
+            this.lblName = new System.Windows.Forms.Label();
+            this.picPicture = new System.Windows.Forms.PictureBox();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -96,7 +96,7 @@
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picPicture)).BeginInit();
             this.SuspendLayout();
             // 
             // btnNew
@@ -130,6 +130,86 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(155, 279);
             this.panel5.TabIndex = 14;
+            // 
+            // lblBSTMCount
+            // 
+            this.lblBSTMCount.AutoSize = true;
+            this.lblBSTMCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBSTMCount.Location = new System.Drawing.Point(103, 241);
+            this.lblBSTMCount.Name = "lblBSTMCount";
+            this.lblBSTMCount.Size = new System.Drawing.Size(35, 18);
+            this.lblBSTMCount.TabIndex = 27;
+            this.lblBSTMCount.Text = "200";
+            // 
+            // lblBSHMCount
+            // 
+            this.lblBSHMCount.AutoSize = true;
+            this.lblBSHMCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBSHMCount.Location = new System.Drawing.Point(103, 201);
+            this.lblBSHMCount.Name = "lblBSHMCount";
+            this.lblBSHMCount.Size = new System.Drawing.Size(35, 18);
+            this.lblBSHMCount.TabIndex = 26;
+            this.lblBSHMCount.Text = "200";
+            // 
+            // lblBSCPECount
+            // 
+            this.lblBSCPECount.AutoSize = true;
+            this.lblBSCPECount.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBSCPECount.Location = new System.Drawing.Point(103, 161);
+            this.lblBSCPECount.Name = "lblBSCPECount";
+            this.lblBSCPECount.Size = new System.Drawing.Size(35, 18);
+            this.lblBSCPECount.TabIndex = 25;
+            this.lblBSCPECount.Text = "200";
+            // 
+            // lblBSCSCount
+            // 
+            this.lblBSCSCount.AutoSize = true;
+            this.lblBSCSCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBSCSCount.Location = new System.Drawing.Point(103, 121);
+            this.lblBSCSCount.Name = "lblBSCSCount";
+            this.lblBSCSCount.Size = new System.Drawing.Size(35, 18);
+            this.lblBSCSCount.TabIndex = 24;
+            this.lblBSCSCount.Text = "200";
+            // 
+            // lblBSTM
+            // 
+            this.lblBSTM.AutoSize = true;
+            this.lblBSTM.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBSTM.Location = new System.Drawing.Point(12, 243);
+            this.lblBSTM.Name = "lblBSTM";
+            this.lblBSTM.Size = new System.Drawing.Size(49, 16);
+            this.lblBSTM.TabIndex = 23;
+            this.lblBSTM.Text = "BSTM";
+            // 
+            // lblBSHM
+            // 
+            this.lblBSHM.AutoSize = true;
+            this.lblBSHM.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBSHM.Location = new System.Drawing.Point(12, 203);
+            this.lblBSHM.Name = "lblBSHM";
+            this.lblBSHM.Size = new System.Drawing.Size(50, 16);
+            this.lblBSHM.TabIndex = 22;
+            this.lblBSHM.Text = "BSHM";
+            // 
+            // lblBSCPE
+            // 
+            this.lblBSCPE.AutoSize = true;
+            this.lblBSCPE.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBSCPE.Location = new System.Drawing.Point(12, 163);
+            this.lblBSCPE.Name = "lblBSCPE";
+            this.lblBSCPE.Size = new System.Drawing.Size(57, 16);
+            this.lblBSCPE.TabIndex = 21;
+            this.lblBSCPE.Text = "BSCPE";
+            // 
+            // lblBSCS
+            // 
+            this.lblBSCS.AutoSize = true;
+            this.lblBSCS.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBSCS.Location = new System.Drawing.Point(12, 123);
+            this.lblBSCS.Name = "lblBSCS";
+            this.lblBSCS.Size = new System.Drawing.Size(47, 16);
+            this.lblBSCS.TabIndex = 20;
+            this.lblBSCS.Text = "BSCS";
             // 
             // lblBEEDCount
             // 
@@ -259,6 +339,26 @@
             this.panel6.Size = new System.Drawing.Size(155, 279);
             this.panel6.TabIndex = 13;
             // 
+            // lblSoccerCount
+            // 
+            this.lblSoccerCount.AutoSize = true;
+            this.lblSoccerCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSoccerCount.Location = new System.Drawing.Point(103, 121);
+            this.lblSoccerCount.Name = "lblSoccerCount";
+            this.lblSoccerCount.Size = new System.Drawing.Size(35, 18);
+            this.lblSoccerCount.TabIndex = 19;
+            this.lblSoccerCount.Text = "500";
+            // 
+            // lblSoccer
+            // 
+            this.lblSoccer.AutoSize = true;
+            this.lblSoccer.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSoccer.Location = new System.Drawing.Point(12, 123);
+            this.lblSoccer.Name = "lblSoccer";
+            this.lblSoccer.Size = new System.Drawing.Size(56, 16);
+            this.lblSoccer.TabIndex = 18;
+            this.lblSoccer.Text = "Soccer";
+            // 
             // lblVolleyballCount
             // 
             this.lblVolleyballCount.AutoSize = true;
@@ -331,6 +431,106 @@
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(155, 279);
             this.panel7.TabIndex = 12;
+            // 
+            // lblBlackCount
+            // 
+            this.lblBlackCount.AutoSize = true;
+            this.lblBlackCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBlackCount.Location = new System.Drawing.Point(103, 245);
+            this.lblBlackCount.Name = "lblBlackCount";
+            this.lblBlackCount.Size = new System.Drawing.Size(35, 18);
+            this.lblBlackCount.TabIndex = 25;
+            this.lblBlackCount.Text = "700";
+            // 
+            // lblPurpleCount
+            // 
+            this.lblPurpleCount.AutoSize = true;
+            this.lblPurpleCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPurpleCount.Location = new System.Drawing.Point(103, 211);
+            this.lblPurpleCount.Name = "lblPurpleCount";
+            this.lblPurpleCount.Size = new System.Drawing.Size(35, 18);
+            this.lblPurpleCount.TabIndex = 24;
+            this.lblPurpleCount.Text = "700";
+            // 
+            // lblGreenCount
+            // 
+            this.lblGreenCount.AutoSize = true;
+            this.lblGreenCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGreenCount.Location = new System.Drawing.Point(103, 177);
+            this.lblGreenCount.Name = "lblGreenCount";
+            this.lblGreenCount.Size = new System.Drawing.Size(35, 18);
+            this.lblGreenCount.TabIndex = 23;
+            this.lblGreenCount.Text = "700";
+            // 
+            // lblOrangeCount
+            // 
+            this.lblOrangeCount.AutoSize = true;
+            this.lblOrangeCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOrangeCount.Location = new System.Drawing.Point(103, 143);
+            this.lblOrangeCount.Name = "lblOrangeCount";
+            this.lblOrangeCount.Size = new System.Drawing.Size(35, 18);
+            this.lblOrangeCount.TabIndex = 22;
+            this.lblOrangeCount.Text = "700";
+            // 
+            // lblBlueCount
+            // 
+            this.lblBlueCount.AutoSize = true;
+            this.lblBlueCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBlueCount.Location = new System.Drawing.Point(103, 109);
+            this.lblBlueCount.Name = "lblBlueCount";
+            this.lblBlueCount.Size = new System.Drawing.Size(35, 18);
+            this.lblBlueCount.TabIndex = 21;
+            this.lblBlueCount.Text = "700";
+            // 
+            // lblBlack
+            // 
+            this.lblBlack.AutoSize = true;
+            this.lblBlack.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBlack.Location = new System.Drawing.Point(12, 247);
+            this.lblBlack.Name = "lblBlack";
+            this.lblBlack.Size = new System.Drawing.Size(63, 16);
+            this.lblBlack.TabIndex = 20;
+            this.lblBlack.Text = "lblBlack";
+            // 
+            // lblPurple
+            // 
+            this.lblPurple.AutoSize = true;
+            this.lblPurple.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPurple.Location = new System.Drawing.Point(12, 213);
+            this.lblPurple.Name = "lblPurple";
+            this.lblPurple.Size = new System.Drawing.Size(52, 16);
+            this.lblPurple.TabIndex = 19;
+            this.lblPurple.Text = "Purple";
+            // 
+            // lblGreen
+            // 
+            this.lblGreen.AutoSize = true;
+            this.lblGreen.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGreen.Location = new System.Drawing.Point(12, 179);
+            this.lblGreen.Name = "lblGreen";
+            this.lblGreen.Size = new System.Drawing.Size(49, 16);
+            this.lblGreen.TabIndex = 18;
+            this.lblGreen.Text = "Green";
+            // 
+            // lblOrange
+            // 
+            this.lblOrange.AutoSize = true;
+            this.lblOrange.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOrange.Location = new System.Drawing.Point(12, 145);
+            this.lblOrange.Name = "lblOrange";
+            this.lblOrange.Size = new System.Drawing.Size(58, 16);
+            this.lblOrange.TabIndex = 17;
+            this.lblOrange.Text = "Orange";
+            // 
+            // lblBlue
+            // 
+            this.lblBlue.AutoSize = true;
+            this.lblBlue.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBlue.Location = new System.Drawing.Point(12, 111);
+            this.lblBlue.Name = "lblBlue";
+            this.lblBlue.Size = new System.Drawing.Size(38, 16);
+            this.lblBlue.TabIndex = 16;
+            this.lblBlue.Text = "Blue";
             // 
             // lblYellowCount
             // 
@@ -451,8 +651,8 @@
             this.panel1.Controls.Add(this.btnActiveStatus);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.lblName);
+            this.panel1.Controls.Add(this.picPicture);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
@@ -523,224 +723,24 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "(Date)";
             // 
-            // label1
+            // lblName
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(61, 115);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(84, 18);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Ana Smith";
+            this.lblName.AutoSize = true;
+            this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblName.Location = new System.Drawing.Point(73, 115);
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(52, 18);
+            this.lblName.TabIndex = 1;
+            this.lblName.Text = "Name";
             // 
-            // pictureBox1
+            // picPicture
             // 
-            this.pictureBox1.BackColor = System.Drawing.SystemColors.Control;
-            this.pictureBox1.Location = new System.Drawing.Point(57, 23);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(96, 84);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
-            // lblBlue
-            // 
-            this.lblBlue.AutoSize = true;
-            this.lblBlue.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBlue.Location = new System.Drawing.Point(12, 111);
-            this.lblBlue.Name = "lblBlue";
-            this.lblBlue.Size = new System.Drawing.Size(38, 16);
-            this.lblBlue.TabIndex = 16;
-            this.lblBlue.Text = "Blue";
-            // 
-            // lblOrange
-            // 
-            this.lblOrange.AutoSize = true;
-            this.lblOrange.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblOrange.Location = new System.Drawing.Point(12, 145);
-            this.lblOrange.Name = "lblOrange";
-            this.lblOrange.Size = new System.Drawing.Size(58, 16);
-            this.lblOrange.TabIndex = 17;
-            this.lblOrange.Text = "Orange";
-            // 
-            // lblGreen
-            // 
-            this.lblGreen.AutoSize = true;
-            this.lblGreen.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGreen.Location = new System.Drawing.Point(12, 179);
-            this.lblGreen.Name = "lblGreen";
-            this.lblGreen.Size = new System.Drawing.Size(49, 16);
-            this.lblGreen.TabIndex = 18;
-            this.lblGreen.Text = "Green";
-            // 
-            // lblPurple
-            // 
-            this.lblPurple.AutoSize = true;
-            this.lblPurple.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPurple.Location = new System.Drawing.Point(12, 213);
-            this.lblPurple.Name = "lblPurple";
-            this.lblPurple.Size = new System.Drawing.Size(52, 16);
-            this.lblPurple.TabIndex = 19;
-            this.lblPurple.Text = "Purple";
-            // 
-            // lblBlack
-            // 
-            this.lblBlack.AutoSize = true;
-            this.lblBlack.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBlack.Location = new System.Drawing.Point(12, 247);
-            this.lblBlack.Name = "lblBlack";
-            this.lblBlack.Size = new System.Drawing.Size(63, 16);
-            this.lblBlack.TabIndex = 20;
-            this.lblBlack.Text = "lblBlack";
-            // 
-            // lblBlueCount
-            // 
-            this.lblBlueCount.AutoSize = true;
-            this.lblBlueCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBlueCount.Location = new System.Drawing.Point(103, 109);
-            this.lblBlueCount.Name = "lblBlueCount";
-            this.lblBlueCount.Size = new System.Drawing.Size(35, 18);
-            this.lblBlueCount.TabIndex = 21;
-            this.lblBlueCount.Text = "700";
-            // 
-            // lblOrangeCount
-            // 
-            this.lblOrangeCount.AutoSize = true;
-            this.lblOrangeCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblOrangeCount.Location = new System.Drawing.Point(103, 143);
-            this.lblOrangeCount.Name = "lblOrangeCount";
-            this.lblOrangeCount.Size = new System.Drawing.Size(35, 18);
-            this.lblOrangeCount.TabIndex = 22;
-            this.lblOrangeCount.Text = "700";
-            // 
-            // lblGreenCount
-            // 
-            this.lblGreenCount.AutoSize = true;
-            this.lblGreenCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGreenCount.Location = new System.Drawing.Point(103, 177);
-            this.lblGreenCount.Name = "lblGreenCount";
-            this.lblGreenCount.Size = new System.Drawing.Size(35, 18);
-            this.lblGreenCount.TabIndex = 23;
-            this.lblGreenCount.Text = "700";
-            // 
-            // lblPurpleCount
-            // 
-            this.lblPurpleCount.AutoSize = true;
-            this.lblPurpleCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPurpleCount.Location = new System.Drawing.Point(103, 211);
-            this.lblPurpleCount.Name = "lblPurpleCount";
-            this.lblPurpleCount.Size = new System.Drawing.Size(35, 18);
-            this.lblPurpleCount.TabIndex = 24;
-            this.lblPurpleCount.Text = "700";
-            // 
-            // lblBlackCount
-            // 
-            this.lblBlackCount.AutoSize = true;
-            this.lblBlackCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBlackCount.Location = new System.Drawing.Point(103, 245);
-            this.lblBlackCount.Name = "lblBlackCount";
-            this.lblBlackCount.Size = new System.Drawing.Size(35, 18);
-            this.lblBlackCount.TabIndex = 25;
-            this.lblBlackCount.Text = "700";
-            // 
-            // lblSoccer
-            // 
-            this.lblSoccer.AutoSize = true;
-            this.lblSoccer.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSoccer.Location = new System.Drawing.Point(12, 123);
-            this.lblSoccer.Name = "lblSoccer";
-            this.lblSoccer.Size = new System.Drawing.Size(56, 16);
-            this.lblSoccer.TabIndex = 18;
-            this.lblSoccer.Text = "Soccer";
-            // 
-            // lblSoccerCount
-            // 
-            this.lblSoccerCount.AutoSize = true;
-            this.lblSoccerCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSoccerCount.Location = new System.Drawing.Point(103, 121);
-            this.lblSoccerCount.Name = "lblSoccerCount";
-            this.lblSoccerCount.Size = new System.Drawing.Size(35, 18);
-            this.lblSoccerCount.TabIndex = 19;
-            this.lblSoccerCount.Text = "500";
-            // 
-            // lblBSCS
-            // 
-            this.lblBSCS.AutoSize = true;
-            this.lblBSCS.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBSCS.Location = new System.Drawing.Point(12, 123);
-            this.lblBSCS.Name = "lblBSCS";
-            this.lblBSCS.Size = new System.Drawing.Size(47, 16);
-            this.lblBSCS.TabIndex = 20;
-            this.lblBSCS.Text = "BSCS";
-            // 
-            // lblBSCPE
-            // 
-            this.lblBSCPE.AutoSize = true;
-            this.lblBSCPE.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBSCPE.Location = new System.Drawing.Point(12, 163);
-            this.lblBSCPE.Name = "lblBSCPE";
-            this.lblBSCPE.Size = new System.Drawing.Size(57, 16);
-            this.lblBSCPE.TabIndex = 21;
-            this.lblBSCPE.Text = "BSCPE";
-            // 
-            // lblBSHM
-            // 
-            this.lblBSHM.AutoSize = true;
-            this.lblBSHM.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBSHM.Location = new System.Drawing.Point(12, 203);
-            this.lblBSHM.Name = "lblBSHM";
-            this.lblBSHM.Size = new System.Drawing.Size(50, 16);
-            this.lblBSHM.TabIndex = 22;
-            this.lblBSHM.Text = "BSHM";
-            // 
-            // lblBSTM
-            // 
-            this.lblBSTM.AutoSize = true;
-            this.lblBSTM.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBSTM.Location = new System.Drawing.Point(12, 243);
-            this.lblBSTM.Name = "lblBSTM";
-            this.lblBSTM.Size = new System.Drawing.Size(49, 16);
-            this.lblBSTM.TabIndex = 23;
-            this.lblBSTM.Text = "BSTM";
-            // 
-            // lblBSCSCount
-            // 
-            this.lblBSCSCount.AutoSize = true;
-            this.lblBSCSCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBSCSCount.Location = new System.Drawing.Point(103, 121);
-            this.lblBSCSCount.Name = "lblBSCSCount";
-            this.lblBSCSCount.Size = new System.Drawing.Size(35, 18);
-            this.lblBSCSCount.TabIndex = 24;
-            this.lblBSCSCount.Text = "200";
-            // 
-            // lblBSCPECount
-            // 
-            this.lblBSCPECount.AutoSize = true;
-            this.lblBSCPECount.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBSCPECount.Location = new System.Drawing.Point(103, 161);
-            this.lblBSCPECount.Name = "lblBSCPECount";
-            this.lblBSCPECount.Size = new System.Drawing.Size(35, 18);
-            this.lblBSCPECount.TabIndex = 25;
-            this.lblBSCPECount.Text = "200";
-            // 
-            // lblBSHMCount
-            // 
-            this.lblBSHMCount.AutoSize = true;
-            this.lblBSHMCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBSHMCount.Location = new System.Drawing.Point(103, 201);
-            this.lblBSHMCount.Name = "lblBSHMCount";
-            this.lblBSHMCount.Size = new System.Drawing.Size(35, 18);
-            this.lblBSHMCount.TabIndex = 26;
-            this.lblBSHMCount.Text = "200";
-            // 
-            // lblBSTMCount
-            // 
-            this.lblBSTMCount.AutoSize = true;
-            this.lblBSTMCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBSTMCount.Location = new System.Drawing.Point(103, 241);
-            this.lblBSTMCount.Name = "lblBSTMCount";
-            this.lblBSTMCount.Size = new System.Drawing.Size(35, 18);
-            this.lblBSTMCount.TabIndex = 27;
-            this.lblBSTMCount.Text = "200";
+            this.picPicture.BackColor = System.Drawing.SystemColors.Control;
+            this.picPicture.Location = new System.Drawing.Point(57, 23);
+            this.picPicture.Name = "picPicture";
+            this.picPicture.Size = new System.Drawing.Size(96, 84);
+            this.picPicture.TabIndex = 1;
+            this.picPicture.TabStop = false;
             // 
             // Form4
             // 
@@ -774,7 +774,7 @@
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picPicture)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -819,8 +819,6 @@
         private System.Windows.Forms.Button btnActiveStatus;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lblBlack;
         private System.Windows.Forms.Label lblPurple;
         private System.Windows.Forms.Label lblGreen;
@@ -841,5 +839,7 @@
         private System.Windows.Forms.Label lblBSCPECount;
         private System.Windows.Forms.Label lblBSCSCount;
         private System.Windows.Forms.Label lblBSTM;
+        public System.Windows.Forms.Label lblName;
+        public System.Windows.Forms.PictureBox picPicture;
     }
 }
