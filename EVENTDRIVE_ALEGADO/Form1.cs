@@ -106,7 +106,7 @@ namespace EVENTDRIVE_ALEGADO
 
             //f2.insert(txtName.Text, gender, hobbies, cmbFavColor.Text, txtSaying.Text);
             Workbook book = new Workbook();
-            book.LoadFromFile(@"C:\Users\ACT-STUDENT\Desktop\seyntt\EVENTDRIVE_ALEGADO\BOOKDB.xlsx");
+            book.LoadFromFile(@"C:\Users\Computer\Desktop\EVENTDRIVEN\sint\EVENTDRIVE_ALEGADO\BOOKDB.xlsx");
             Worksheet sh = book.Worksheets[0];
             int row = sh.Rows.Length + 1;
             sh.Range[row, 1].Value = txtName.Text;
@@ -127,7 +127,7 @@ namespace EVENTDRIVE_ALEGADO
 
             if (lblMessage.Text == "")
             {
-                book.SaveToFile(@"C:\Users\ACT-STUDENT\Desktop\seyntt\EVENTDRIVE_ALEGADO\BOOKDB.xlsx", ExcelVersion.Version2016);
+                book.SaveToFile(@"C:\Users\Computer\Desktop\EVENTDRIVEN\sint\EVENTDRIVE_ALEGADO\BOOKDB.xlsx", ExcelVersion.Version2016);
                 DataTable dt = sh.ExportDataTable();
                 f2.dtgInfo.DataSource = dt;
             }
@@ -176,7 +176,7 @@ namespace EVENTDRIVE_ALEGADO
 
             //f2.update(Convert.ToInt32(lblInfo.Text), txtName.Text, gender, hobbies, cmbFavColor.Text, txtSaying.Text);
             Workbook book = new Workbook();
-            book.LoadFromFile(@"C:\Users\ACT-STUDENT\Desktop\seyntt\EVENTDRIVE_ALEGADO\BOOKDB.xlsx");
+            book.LoadFromFile(@"C:\Users\Computer\Desktop\EVENTDRIVEN\sint\EVENTDRIVE_ALEGADO\BOOKDB.xlsx");
             Worksheet sh = book.Worksheets[0];
             int row = f2.dtgInfo.CurrentCell.RowIndex + 2;
             sh.Range[row, 1].Value = txtName.Text;
@@ -193,7 +193,7 @@ namespace EVENTDRIVE_ALEGADO
             sh.Range[row, 12].Value = cmbCourse.Text;
             sh.Range[row, 13].Value = txtStatus.Text;
 
-            book.SaveToFile(@"C:\Users\ACT-STUDENT\Desktop\seyntt\EVENTDRIVE_ALEGADO\BOOKDB.xlsx", ExcelVersion.Version2016);
+            book.SaveToFile(@"C:\Users\Computer\Desktop\EVENTDRIVEN\sint\EVENTDRIVE_ALEGADO\BOOKDB.xlsx", ExcelVersion.Version2016);
             DataTable dt = sh.ExportDataTable();
             f2.dtgInfo.DataSource = dt;
         }
