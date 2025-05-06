@@ -116,9 +116,9 @@ namespace EVENTDRIVE_ALEGADO
 
         private void dtgInfo_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            Form1 f1 = new Form1();
+            
             int r = dtgInfo.CurrentCell.RowIndex;
-            //Form1 f1 = (Form1)Application.OpenForms["Form1"];
+            Form1 f1 = (Form1)Application.OpenForms["Form1"];
             f1.lblInfo.Text = r.ToString();
             f1.txtName.Text = dtgInfo.Rows[r].Cells[0].Value.ToString();
             string gender = dtgInfo.Rows[r].Cells[1].Value.ToString();
