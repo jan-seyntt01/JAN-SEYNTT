@@ -41,7 +41,10 @@ namespace EVENTDRIVE_ALEGADO
                 {
                     if (sheet.Range[i, 7].Value == txtUsername.Text && sheet.Range[i, 8].Value == txtPassword.Text)
                     {
-                        f4.lblProfileName.Text = sheet.Range[i, 2].Value;
+                        DisplayIt.CurrentUser = txtUsername.Text;
+                        DisplayIt.DisplayName = sheet.Range[i, 1].Value;
+                        DisplayIt.ProfilePath = sheet.Range[i, 14].Value;
+                        //f4.lblProfileName.Text = sheet.Range[i, 2].Value;
                         //f4.picPicture.Image = Image.FromFile(@"" + sheet.Range[i, 14].Value);
                         //f4.picPicture.SizeMode = PictureBoxSizeMode.StretchImage;
                         //datetimepicker code here ***

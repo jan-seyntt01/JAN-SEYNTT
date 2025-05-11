@@ -34,6 +34,7 @@
             this.btnDelete = new System.Windows.Forms.Button();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.dtgInfo = new System.Windows.Forms.DataGridView();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dtgInfo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -64,7 +65,7 @@
             // btnDelete
             // 
             this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDelete.Location = new System.Drawing.Point(721, 582);
+            this.btnDelete.Location = new System.Drawing.Point(721, 485);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(75, 23);
             this.btnDelete.TabIndex = 13;
@@ -84,9 +85,19 @@
             this.dtgInfo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgInfo.Location = new System.Drawing.Point(4, 99);
             this.dtgInfo.Name = "dtgInfo";
-            this.dtgInfo.Size = new System.Drawing.Size(792, 453);
+            this.dtgInfo.Size = new System.Drawing.Size(792, 380);
             this.dtgInfo.TabIndex = 11;
             this.dtgInfo.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgInfo_CellDoubleClick);
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(4, 485);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 16;
+            this.button1.Text = "New";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // Form2
             // 
@@ -94,7 +105,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(800, 617);
+            this.ClientSize = new System.Drawing.Size(800, 529);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnDelete);
@@ -117,5 +129,6 @@
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.TextBox txtSearch;
         public System.Windows.Forms.DataGridView dtgInfo;
+        private System.Windows.Forms.Button button1;
     }
 }

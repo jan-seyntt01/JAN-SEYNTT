@@ -727,7 +727,7 @@
             // 
             this.lblProfileName.AutoSize = true;
             this.lblProfileName.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblProfileName.Location = new System.Drawing.Point(75, 115);
+            this.lblProfileName.Location = new System.Drawing.Point(65, 115);
             this.lblProfileName.Name = "lblProfileName";
             this.lblProfileName.Size = new System.Drawing.Size(52, 18);
             this.lblProfileName.TabIndex = 1;

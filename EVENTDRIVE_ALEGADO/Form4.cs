@@ -38,6 +38,8 @@ namespace EVENTDRIVE_ALEGADO
             lblBSCPECount.Text = showCount(12, "BSCPE").ToString();
             lblBSHMCount.Text = showCount(12, "BSHM").ToString();
             lblBSTMCount.Text = showCount(12, "BSTM").ToString();
+
+            lblProfileName.Text = DisplayIt.DisplayName;
         }
        
         public int showCount(int c, string field)
