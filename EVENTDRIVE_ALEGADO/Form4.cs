@@ -86,15 +86,20 @@ namespace EVENTDRIVE_ALEGADO
 
         private void button4_Click(object sender, EventArgs e)
         {
-            Mylogs mylogs = new Mylogs();
-            Form3 f3 = new Form3();
-            DialogResult Yes = MessageBox.Show("Are you sure you want to logout?", "Notice", MessageBoxButtons.YesNo);
-            if (Yes == DialogResult.Yes)
-            {
-                f3.Show();
-            }
-            
+            Mylogs logs = new Mylogs();
+            logs.insertLogs(DisplayIt.CurrentUser, "Logged Out.");
+            Form3 frm3 = new Form3();
+            frm3.Show();
             this.Hide();
+            //Mylogs mylogs = new Mylogs();
+            //Form3 f3 = new Form3();
+            //DialogResult Yes = MessageBox.Show("Are you sure you want to logout?", "Notice", MessageBoxButtons.YesNo);
+            //if (Yes == DialogResult.Yes)
+            //{
+            //    f3.Show();
+            //}
+
+            //this.Hide();
         }
     }
 }

@@ -34,7 +34,7 @@
             this.btnDelete = new System.Windows.Forms.Button();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.dtgInfo = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnNew = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dtgInfo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -89,15 +89,16 @@
             this.dtgInfo.TabIndex = 11;
             this.dtgInfo.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgInfo_CellDoubleClick);
             // 
-            // button1
+            // btnNew
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(4, 485);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 16;
-            this.button1.Text = "New";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnNew.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNew.Location = new System.Drawing.Point(4, 485);
+            this.btnNew.Name = "btnNew";
+            this.btnNew.Size = new System.Drawing.Size(75, 23);
+            this.btnNew.TabIndex = 16;
+            this.btnNew.Text = "New";
+            this.btnNew.UseVisualStyleBackColor = true;
+            this.btnNew.Click += new System.EventHandler(this.btnNew_Click);
             // 
             // Form2
             // 
@@ -106,7 +107,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 529);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnNew);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnDelete);
@@ -129,6 +130,6 @@
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.TextBox txtSearch;
         public System.Windows.Forms.DataGridView dtgInfo;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnNew;
     }
 }

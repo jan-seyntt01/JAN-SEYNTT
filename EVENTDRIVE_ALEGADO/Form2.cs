@@ -94,23 +94,73 @@ namespace EVENTDRIVE_ALEGADO
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            dtgInfo.ClearSelection();
+
+            Mylogs logs = new Mylogs(); 
+            logs.insertLogs(DisplayIt.CurrentUser, "Searched in the active list.");
+            string searchText = txtSearch.Text.ToLower();
+            bool foundMatch = false;
 
             if (string.IsNullOrEmpty(txtSearch.Text))
             {
-                MessageBox.Show("Please type on the search bar!", "Notice!");
+                MessageBox.Show("Please enter the cell you want to search.", "WARNING", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+
+
+            foreach (DataGridViewRow row in dtgInfo.Rows)
+            {
+                foreach (DataGridViewCell cell in row.Cells)
+                {
+                    if (cell.Value != null && cell.Value.ToString().ToLower().Split(' ').Contains(searchText))
+                    {
+                        cell.Style.BackColor = Color.Yellow;
+                        foundMatch = true;
+                    }
+                    else
+                    {
+                        cell.Style.BackColor = dtgInfo.DefaultCellStyle.BackColor;
+                    }
+                }
+            }
+
+            if (foundMatch)
+            {
+                MessageBox.Show("Matching cells have been highlighted.", "Search Results", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
-                foreach (DataGridViewRow row in dtgInfo.Rows)
-                {
-                    if (row.Cells[0].Value.ToString().Equals(txtSearch.Text))
-                    {
-                        row.Selected = true;
-                        break;
-                    }
-                }
+                MessageBox.Show("No matching cells found.", "Search Results", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            //dtgInfo.ClearSelection();
 
+            //if (string.IsNullOrEmpty(txtSearch.Text))
+            //{
+            //    MessageBox.Show("Please type on the search bar!", "Notice!");
+            //}
+            //else
+            //{
+            //    foreach (DataGridViewRow row in dtgInfo.Rows)
+            //    {
+            //        if (row.Cells[0].Value.ToString().Equals(txtSearch.Text))
+            //        {
+            //            row.Selected = true;
+            //            break;
+            //        }
+            //    }
+
+            //}
+        }
+        private void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+            string searchText = txtSearch.Text.ToLower();
+
+            foreach (DataGridViewRow row in dtgInfo.Rows)
+            {
+                foreach (DataGridViewCell cell in row.Cells)
+                {
+                    cell.Style.BackColor = dtgInfo.DefaultCellStyle.BackColor;
+                }
             }
         }
 
@@ -192,6 +242,12 @@ namespace EVENTDRIVE_ALEGADO
 
             }
 
+        }
+
+        private void btnNew_Click(object sender, EventArgs e)
+        {
+            Form1 f1 = new Form1();
+            f1.Show();  
         }
     }
 }
