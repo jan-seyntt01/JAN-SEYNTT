@@ -41,10 +41,10 @@ namespace EVENTDRIVE_ALEGADO
                 {
                     if (sheet.Range[i, 7].Value == txtUsername.Text && sheet.Range[i, 8].Value == txtPassword.Text)
                     {
-                        //f4.lblName.Text = sheet[i, 1].Value;
-                        //f4.picPicture.Image = Image.FromFile(@"C:\Users\Computer\Desktop\EVENTDRIVEN\sint\EVENTDRIVE_ALEGADO\Pictures.xlsx" + sheet.Range[i, 14].Value);
+                        f4.lblProfileName.Text = sheet.Range[i, 2].Value;
+                        //f4.picPicture.Image = Image.FromFile(@"" + sheet.Range[i, 14].Value);
                         //f4.picPicture.SizeMode = PictureBoxSizeMode.StretchImage;
-                        //
+                        //datetimepicker code here ***
                         log.insertLogs(txtUsername.Text, txtUsername.Text + " logged in");
                         logs = true;
                         break;

@@ -87,7 +87,7 @@
             this.btnActiveStatus = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.lblName = new System.Windows.Forms.Label();
+            this.lblProfileName = new System.Windows.Forms.Label();
             this.picPicture = new System.Windows.Forms.PictureBox();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -651,7 +651,7 @@
             this.panel1.Controls.Add(this.btnActiveStatus);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.lblName);
+            this.panel1.Controls.Add(this.lblProfileName);
             this.panel1.Controls.Add(this.picPicture);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -723,15 +723,15 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "(Date)";
             // 
-            // lblName
+            // lblProfileName
             // 
-            this.lblName.AutoSize = true;
-            this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblName.Location = new System.Drawing.Point(73, 115);
-            this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(52, 18);
-            this.lblName.TabIndex = 1;
-            this.lblName.Text = "Name";
+            this.lblProfileName.AutoSize = true;
+            this.lblProfileName.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProfileName.Location = new System.Drawing.Point(75, 115);
+            this.lblProfileName.Name = "lblProfileName";
+            this.lblProfileName.Size = new System.Drawing.Size(52, 18);
+            this.lblProfileName.TabIndex = 1;
+            this.lblProfileName.Text = "Name";
             // 
             // picPicture
             // 
@@ -839,7 +839,7 @@
         private System.Windows.Forms.Label lblBSCPECount;
         private System.Windows.Forms.Label lblBSCSCount;
         private System.Windows.Forms.Label lblBSTM;
-        public System.Windows.Forms.Label lblName;
+        public System.Windows.Forms.Label lblProfileName;
         public System.Windows.Forms.PictureBox picPicture;
     }
 }

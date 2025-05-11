@@ -132,14 +132,11 @@ namespace EVENTDRIVE_ALEGADO
                 f2.dtgInfo.DataSource = dt;
             }
             else return;
-            
-
 
             txtName.Clear();
             txtSaying.Clear();
 
         }
-
         private void btnUpdate_Click(object sender, EventArgs e)
         {
             btnAdd.Visible = false;
@@ -197,7 +194,6 @@ namespace EVENTDRIVE_ALEGADO
             DataTable dt = sh.ExportDataTable();
             f2.dtgInfo.DataSource = dt;
         }
-
         private void btnDisplay_Click(object sender, EventArgs e)
         {
             f2.Show();
