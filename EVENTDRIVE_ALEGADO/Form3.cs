@@ -41,7 +41,7 @@ namespace EVENTDRIVE_ALEGADO
                 {
                     if (sheet.Range[i, 7].Value == txtUsername.Text && sheet.Range[i, 8].Value == txtPassword.Text)
                     {
-                        DisplayIt.CurrentUser = txtUsername.Text;
+                        //DisplayIt.CurrentUser = txtUsername.Text;
                         DisplayIt.DisplayName = sheet.Range[i, 1].Value;
                         DisplayIt.ProfilePath = sheet.Range[i, 14].Value;
                         //f4.lblProfileName.Text = sheet.Range[i, 2].Value;

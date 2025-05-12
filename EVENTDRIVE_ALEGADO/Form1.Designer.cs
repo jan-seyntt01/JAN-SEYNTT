@@ -81,7 +81,7 @@
             "BSCPE",
             "BSHM",
             "BSTM"});
-            this.cmbCourse.Location = new System.Drawing.Point(127, 355);
+            this.cmbCourse.Location = new System.Drawing.Point(127, 346);
             this.cmbCourse.Name = "cmbCourse";
             this.cmbCourse.Size = new System.Drawing.Size(210, 21);
             this.cmbCourse.TabIndex = 14;
@@ -91,7 +91,7 @@
             this.lblCourse.AutoSize = true;
             this.lblCourse.BackColor = System.Drawing.Color.Transparent;
             this.lblCourse.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCourse.Location = new System.Drawing.Point(13, 356);
+            this.lblCourse.Location = new System.Drawing.Point(13, 347);
             this.lblCourse.Name = "lblCourse";
             this.lblCourse.Size = new System.Drawing.Size(60, 16);
             this.lblCourse.TabIndex = 92;
@@ -99,9 +99,9 @@
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(393, 36);
+            this.txtPassword.Location = new System.Drawing.Point(344, 27);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(159, 20);
+            this.txtPassword.Size = new System.Drawing.Size(116, 20);
             this.txtPassword.TabIndex = 2;
             // 
             // lblPassword
@@ -109,7 +109,7 @@
             this.lblPassword.AutoSize = true;
             this.lblPassword.BackColor = System.Drawing.Color.Transparent;
             this.lblPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPassword.Location = new System.Drawing.Point(305, 37);
+            this.lblPassword.Location = new System.Drawing.Point(256, 28);
             this.lblPassword.Name = "lblPassword";
             this.lblPassword.Size = new System.Drawing.Size(79, 16);
             this.lblPassword.TabIndex = 89;
@@ -117,9 +117,9 @@
             // 
             // txtUsername
             // 
-            this.txtUsername.Location = new System.Drawing.Point(127, 36);
+            this.txtUsername.Location = new System.Drawing.Point(127, 27);
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(159, 20);
+            this.txtUsername.Size = new System.Drawing.Size(116, 20);
             this.txtUsername.TabIndex = 1;
             // 
             // lblUsesrname
@@ -127,7 +127,7 @@
             this.lblUsesrname.AutoSize = true;
             this.lblUsesrname.BackColor = System.Drawing.Color.Transparent;
             this.lblUsesrname.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsesrname.Location = new System.Drawing.Point(13, 36);
+            this.lblUsesrname.Location = new System.Drawing.Point(13, 27);
             this.lblUsesrname.Name = "lblUsesrname";
             this.lblUsesrname.Size = new System.Drawing.Size(82, 16);
             this.lblUsesrname.TabIndex = 87;
@@ -135,7 +135,7 @@
             // 
             // txtAge
             // 
-            this.txtAge.Location = new System.Drawing.Point(399, 236);
+            this.txtAge.Location = new System.Drawing.Point(399, 227);
             this.txtAge.Name = "txtAge";
             this.txtAge.Size = new System.Drawing.Size(61, 20);
             this.txtAge.TabIndex = 9;
@@ -145,7 +145,7 @@
             this.lblAge.AutoSize = true;
             this.lblAge.BackColor = System.Drawing.Color.Transparent;
             this.lblAge.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAge.Location = new System.Drawing.Point(351, 237);
+            this.lblAge.Location = new System.Drawing.Point(351, 228);
             this.lblAge.Name = "lblAge";
             this.lblAge.Size = new System.Drawing.Size(39, 16);
             this.lblAge.TabIndex = 85;
@@ -153,7 +153,7 @@
             // 
             // dtpBirthday
             // 
-            this.dtpBirthday.Location = new System.Drawing.Point(127, 236);
+            this.dtpBirthday.Location = new System.Drawing.Point(127, 227);
             this.dtpBirthday.Name = "dtpBirthday";
             this.dtpBirthday.Size = new System.Drawing.Size(200, 20);
             this.dtpBirthday.TabIndex = 8;
@@ -164,7 +164,7 @@
             this.lblBirthday.AutoSize = true;
             this.lblBirthday.BackColor = System.Drawing.Color.Transparent;
             this.lblBirthday.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBirthday.Location = new System.Drawing.Point(13, 236);
+            this.lblBirthday.Location = new System.Drawing.Point(13, 227);
             this.lblBirthday.Name = "lblBirthday";
             this.lblBirthday.Size = new System.Drawing.Size(64, 16);
             this.lblBirthday.TabIndex = 83;
@@ -172,7 +172,7 @@
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(127, 196);
+            this.txtEmail.Location = new System.Drawing.Point(127, 187);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(333, 20);
             this.txtEmail.TabIndex = 7;
@@ -182,7 +182,7 @@
             this.lblEmail.AutoSize = true;
             this.lblEmail.BackColor = System.Drawing.Color.Transparent;
             this.lblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmail.Location = new System.Drawing.Point(13, 196);
+            this.lblEmail.Location = new System.Drawing.Point(13, 187);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(50, 16);
             this.lblEmail.TabIndex = 81;
@@ -190,7 +190,7 @@
             // 
             // txtAddress
             // 
-            this.txtAddress.Location = new System.Drawing.Point(127, 156);
+            this.txtAddress.Location = new System.Drawing.Point(127, 147);
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(333, 20);
             this.txtAddress.TabIndex = 6;
@@ -200,7 +200,7 @@
             this.lblAddress.AutoSize = true;
             this.lblAddress.BackColor = System.Drawing.Color.Transparent;
             this.lblAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAddress.Location = new System.Drawing.Point(13, 156);
+            this.lblAddress.Location = new System.Drawing.Point(13, 147);
             this.lblAddress.Name = "lblAddress";
             this.lblAddress.Size = new System.Drawing.Size(69, 16);
             this.lblAddress.TabIndex = 79;
@@ -210,7 +210,7 @@
             // 
             this.lblInfo.AutoSize = true;
             this.lblInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblInfo.Location = new System.Drawing.Point(12, 9);
+            this.lblInfo.Location = new System.Drawing.Point(3, 547);
             this.lblInfo.Name = "lblInfo";
             this.lblInfo.Size = new System.Drawing.Size(32, 16);
             this.lblInfo.TabIndex = 78;
@@ -220,7 +220,7 @@
             // btnUpdate
             // 
             this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdate.Location = new System.Drawing.Point(127, 554);
+            this.btnUpdate.Location = new System.Drawing.Point(557, 444);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(75, 23);
             this.btnUpdate.TabIndex = 17;
@@ -232,7 +232,7 @@
             // btnDisplay
             // 
             this.btnDisplay.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDisplay.Location = new System.Drawing.Point(236, 554);
+            this.btnDisplay.Location = new System.Drawing.Point(557, 484);
             this.btnDisplay.Name = "btnDisplay";
             this.btnDisplay.Size = new System.Drawing.Size(75, 23);
             this.btnDisplay.TabIndex = 18;
@@ -243,7 +243,7 @@
             // btnAdd
             // 
             this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd.Location = new System.Drawing.Point(127, 554);
+            this.btnAdd.Location = new System.Drawing.Point(557, 444);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(75, 23);
             this.btnAdd.TabIndex = 16;
@@ -253,7 +253,7 @@
             // 
             // txtSaying
             // 
-            this.txtSaying.Location = new System.Drawing.Point(127, 395);
+            this.txtSaying.Location = new System.Drawing.Point(127, 386);
             this.txtSaying.Multiline = true;
             this.txtSaying.Name = "txtSaying";
             this.txtSaying.Size = new System.Drawing.Size(350, 48);
@@ -264,7 +264,7 @@
             this.lblSaying.AutoSize = true;
             this.lblSaying.BackColor = System.Drawing.Color.Transparent;
             this.lblSaying.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSaying.Location = new System.Drawing.Point(13, 396);
+            this.lblSaying.Location = new System.Drawing.Point(13, 387);
             this.lblSaying.Name = "lblSaying";
             this.lblSaying.Size = new System.Drawing.Size(59, 16);
             this.lblSaying.TabIndex = 73;
@@ -282,7 +282,7 @@
             "Green",
             "Purple",
             "Black"});
-            this.cmbFavColor.Location = new System.Drawing.Point(127, 315);
+            this.cmbFavColor.Location = new System.Drawing.Point(127, 306);
             this.cmbFavColor.Name = "cmbFavColor";
             this.cmbFavColor.Size = new System.Drawing.Size(210, 21);
             this.cmbFavColor.TabIndex = 13;
@@ -291,7 +291,7 @@
             // 
             this.chkSoccer.AutoSize = true;
             this.chkSoccer.BackColor = System.Drawing.Color.Transparent;
-            this.chkSoccer.Location = new System.Drawing.Point(292, 276);
+            this.chkSoccer.Location = new System.Drawing.Point(292, 267);
             this.chkSoccer.Name = "chkSoccer";
             this.chkSoccer.Size = new System.Drawing.Size(60, 17);
             this.chkSoccer.TabIndex = 12;
@@ -302,7 +302,7 @@
             // 
             this.chkVolleyball.AutoSize = true;
             this.chkVolleyball.BackColor = System.Drawing.Color.Transparent;
-            this.chkVolleyball.Location = new System.Drawing.Point(210, 276);
+            this.chkVolleyball.Location = new System.Drawing.Point(210, 267);
             this.chkVolleyball.Name = "chkVolleyball";
             this.chkVolleyball.Size = new System.Drawing.Size(70, 17);
             this.chkVolleyball.TabIndex = 11;
@@ -313,7 +313,7 @@
             // 
             this.chkBasketball.AutoSize = true;
             this.chkBasketball.BackColor = System.Drawing.Color.Transparent;
-            this.chkBasketball.Location = new System.Drawing.Point(127, 276);
+            this.chkBasketball.Location = new System.Drawing.Point(127, 267);
             this.chkBasketball.Name = "chkBasketball";
             this.chkBasketball.Size = new System.Drawing.Size(75, 17);
             this.chkBasketball.TabIndex = 10;
@@ -324,7 +324,7 @@
             // 
             this.radFemale.AutoSize = true;
             this.radFemale.BackColor = System.Drawing.Color.Transparent;
-            this.radFemale.Location = new System.Drawing.Point(195, 116);
+            this.radFemale.Location = new System.Drawing.Point(195, 107);
             this.radFemale.Name = "radFemale";
             this.radFemale.Size = new System.Drawing.Size(59, 17);
             this.radFemale.TabIndex = 5;
@@ -336,7 +336,7 @@
             // 
             this.radMale.AutoSize = true;
             this.radMale.BackColor = System.Drawing.Color.Transparent;
-            this.radMale.Location = new System.Drawing.Point(127, 116);
+            this.radMale.Location = new System.Drawing.Point(127, 107);
             this.radMale.Name = "radMale";
             this.radMale.Size = new System.Drawing.Size(48, 17);
             this.radMale.TabIndex = 4;
@@ -346,7 +346,7 @@
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(127, 76);
+            this.txtName.Location = new System.Drawing.Point(127, 67);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(333, 20);
             this.txtName.TabIndex = 3;
@@ -356,7 +356,7 @@
             this.lblFavColor.AutoSize = true;
             this.lblFavColor.BackColor = System.Drawing.Color.Transparent;
             this.lblFavColor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFavColor.Location = new System.Drawing.Point(13, 316);
+            this.lblFavColor.Location = new System.Drawing.Point(13, 307);
             this.lblFavColor.Name = "lblFavColor";
             this.lblFavColor.Size = new System.Drawing.Size(109, 16);
             this.lblFavColor.TabIndex = 65;
@@ -367,7 +367,7 @@
             this.lblHobbies.AutoSize = true;
             this.lblHobbies.BackColor = System.Drawing.Color.Transparent;
             this.lblHobbies.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHobbies.Location = new System.Drawing.Point(13, 276);
+            this.lblHobbies.Location = new System.Drawing.Point(13, 267);
             this.lblHobbies.Name = "lblHobbies";
             this.lblHobbies.Size = new System.Drawing.Size(70, 16);
             this.lblHobbies.TabIndex = 64;
@@ -378,7 +378,7 @@
             this.lblGender.AutoSize = true;
             this.lblGender.BackColor = System.Drawing.Color.Transparent;
             this.lblGender.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGender.Location = new System.Drawing.Point(13, 116);
+            this.lblGender.Location = new System.Drawing.Point(13, 107);
             this.lblGender.Name = "lblGender";
             this.lblGender.Size = new System.Drawing.Size(62, 16);
             this.lblGender.TabIndex = 63;
@@ -389,7 +389,7 @@
             this.lblName.AutoSize = true;
             this.lblName.BackColor = System.Drawing.Color.Transparent;
             this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblName.Location = new System.Drawing.Point(13, 76);
+            this.lblName.Location = new System.Drawing.Point(13, 67);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(52, 16);
             this.lblName.TabIndex = 62;
@@ -434,20 +434,20 @@
             this.pnlInfo.Controls.Add(this.btnAdd);
             this.pnlInfo.Controls.Add(this.btnDisplay);
             this.pnlInfo.Controls.Add(this.btnUpdate);
-            this.pnlInfo.Location = new System.Drawing.Point(113, 22);
+            this.pnlInfo.Location = new System.Drawing.Point(32, 8);
             this.pnlInfo.Name = "pnlInfo";
-            this.pnlInfo.Size = new System.Drawing.Size(567, 641);
+            this.pnlInfo.Size = new System.Drawing.Size(735, 534);
             this.pnlInfo.TabIndex = 94;
             // 
             // lblMessage
             // 
             this.lblMessage.AutoSize = true;
             this.lblMessage.BackColor = System.Drawing.Color.Transparent;
-            this.lblMessage.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMessage.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMessage.ForeColor = System.Drawing.Color.Red;
-            this.lblMessage.Location = new System.Drawing.Point(123, 598);
+            this.lblMessage.Location = new System.Drawing.Point(470, 26);
             this.lblMessage.Name = "lblMessage";
-            this.lblMessage.Size = new System.Drawing.Size(55, 24);
+            this.lblMessage.Size = new System.Drawing.Size(40, 16);
             this.lblMessage.TabIndex = 98;
             this.lblMessage.Text = "error";
             this.lblMessage.Visible = false;
@@ -455,7 +455,7 @@
             // btnBrowse
             // 
             this.btnBrowse.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBrowse.Location = new System.Drawing.Point(127, 494);
+            this.btnBrowse.Location = new System.Drawing.Point(127, 485);
             this.btnBrowse.Name = "btnBrowse";
             this.btnBrowse.Size = new System.Drawing.Size(75, 23);
             this.btnBrowse.TabIndex = 97;
@@ -465,7 +465,7 @@
             // 
             // txtBrowse
             // 
-            this.txtBrowse.Location = new System.Drawing.Point(210, 495);
+            this.txtBrowse.Location = new System.Drawing.Point(210, 486);
             this.txtBrowse.Name = "txtBrowse";
             this.txtBrowse.Size = new System.Drawing.Size(267, 20);
             this.txtBrowse.TabIndex = 96;
@@ -475,7 +475,7 @@
             this.lblProfile.AutoSize = true;
             this.lblProfile.BackColor = System.Drawing.Color.Transparent;
             this.lblProfile.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblProfile.Location = new System.Drawing.Point(13, 499);
+            this.lblProfile.Location = new System.Drawing.Point(13, 490);
             this.lblProfile.Name = "lblProfile";
             this.lblProfile.Size = new System.Drawing.Size(56, 16);
             this.lblProfile.TabIndex = 95;
@@ -486,7 +486,7 @@
             this.lblStatus.AutoSize = true;
             this.lblStatus.BackColor = System.Drawing.Color.Transparent;
             this.lblStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStatus.Location = new System.Drawing.Point(13, 455);
+            this.lblStatus.Location = new System.Drawing.Point(13, 446);
             this.lblStatus.Name = "lblStatus";
             this.lblStatus.Size = new System.Drawing.Size(54, 16);
             this.lblStatus.TabIndex = 94;
@@ -494,7 +494,7 @@
             // 
             // txtStatus
             // 
-            this.txtStatus.Location = new System.Drawing.Point(127, 455);
+            this.txtStatus.Location = new System.Drawing.Point(127, 446);
             this.txtStatus.Name = "txtStatus";
             this.txtStatus.Size = new System.Drawing.Size(159, 20);
             this.txtStatus.TabIndex = 93;
@@ -505,7 +505,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(800, 690);
+            this.ClientSize = new System.Drawing.Size(800, 563);
             this.Controls.Add(this.pnlInfo);
             this.Controls.Add(this.lblInfo);
             this.Name = "Form1";

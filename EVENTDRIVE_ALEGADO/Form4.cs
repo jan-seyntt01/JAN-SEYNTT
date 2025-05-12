@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,10 +15,18 @@ namespace EVENTDRIVE_ALEGADO
     public partial class Form4 : Form
     {
         Form2 f2 = new Form2();
-        
+        Workbook book = new Workbook();
+
         public Form4()
         {
             InitializeComponent();
+            if (!string.IsNullOrEmpty(DisplayIt.ProfilePath) && File.Exists(DisplayIt.ProfilePath))
+            {
+                picPicture.Image = Image.FromFile(DisplayIt.ProfilePath);
+                picPicture.Image = Image.FromFile(DisplayIt.ProfilePath);
+                picPicture.SizeMode = PictureBoxSizeMode.StretchImage; // Set the SizeMode to StretchImage
+            }
+
             lblActiveCount.Text = showCount(13, "1").ToString();
             lblMaleCount.Text = showCount(2, "Male").ToString();
             lblInactiveCount.Text = showCount(13, "0").ToString();

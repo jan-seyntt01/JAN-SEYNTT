@@ -89,6 +89,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.lblProfileName = new System.Windows.Forms.Label();
             this.picPicture = new System.Windows.Forms.PictureBox();
+            this.lblProfPathHolder = new System.Windows.Forms.Label();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -645,6 +646,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.panel1.Controls.Add(this.lblProfPathHolder);
             this.panel1.Controls.Add(this.button4);
             this.panel1.Controls.Add(this.btnLogs);
             this.panel1.Controls.Add(this.btnInactiveStatus);
@@ -741,6 +743,20 @@
             this.picPicture.Size = new System.Drawing.Size(96, 84);
             this.picPicture.TabIndex = 1;
             this.picPicture.TabStop = false;
+            // 
+            // lblProfPathHolder
+            // 
+            this.lblProfPathHolder.AutoSize = true;
+            this.lblProfPathHolder.BackColor = System.Drawing.Color.Transparent;
+            this.lblProfPathHolder.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProfPathHolder.ForeColor = System.Drawing.Color.White;
+            this.lblProfPathHolder.Location = new System.Drawing.Point(37, 167);
+            this.lblProfPathHolder.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblProfPathHolder.Name = "lblProfPathHolder";
+            this.lblProfPathHolder.Size = new System.Drawing.Size(66, 16);
+            this.lblProfPathHolder.TabIndex = 34;
+            this.lblProfPathHolder.Text = "ProfPath";
+            this.lblProfPathHolder.Visible = false;
             // 
             // Form4
             // 
@@ -841,5 +857,6 @@
         private System.Windows.Forms.Label lblBSTM;
         public System.Windows.Forms.Label lblProfileName;
         public System.Windows.Forms.PictureBox picPicture;
+        public System.Windows.Forms.Label lblProfPathHolder;
     }
 }
