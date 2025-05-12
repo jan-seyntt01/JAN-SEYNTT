@@ -1,4 +1,5 @@
 ﻿using Spire.Xls;
+using Spire.Xls.Collections;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -9,6 +10,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 
 namespace EVENTDRIVE_ALEGADO
 {
@@ -71,17 +73,54 @@ namespace EVENTDRIVE_ALEGADO
             return regex.IsMatch(email);
         }
 
+        public int CalculateAge(DateTime birthAge)
+        {
+            int age = DateTime.Today.Year - birthAge.Year;
+            if (birthAge > DateTime.Today.AddYears(-age)) age--;
+            return age;
+        }
         private void Form1_Load(object sender, EventArgs e)
         {
             pnlInfo.BackColor = Color.FromArgb(30, 50, 50, 100);
             txtAge.Enabled = false;
+        }
+        public void UpdateTextFields(int ID, string name, string gender, string hobbies, string address, string email, string birthday, string age, string favColor, string user, string pass, string saying, string course, string status, string profile)
+        {
+            txtName.Text = name;
+
+            ID = Convert.ToInt32(ID);
+
+            if (gender == "Male")
+            {
+                radMale.Checked = true;
+            }
+            else if (gender == "Female")
+            {
+                radFemale.Checked = true;
+            }
+
+            chkBasketball.Checked = hobbies.Contains("Basketball");
+            chkVolleyball.Checked = hobbies.Contains("Volleyball");
+            chkSoccer.Checked = hobbies.Contains("Badminton");
+
+
+            txtAddress.Text = address;
+            txtEmail.Text = email;
+            dtpBirthday.Text = birthday;
+            txtAge.Text = age;
+            cmbFavColor.Text = favColor;
+            txtUsername.Text = user;
+            txtPassword.Text = pass;
+            txtSaying.Text = saying;
+            cmbCourse.Text = course;
+            txtStatus.Text = status;
+            lblProfile.Text = profile;
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
 
             Workbook book = new Workbook();
-            lblMessage.Text = checkEmpty();
             lblMessage.Visible = true;
 
             lblMessage.Text = "";
@@ -100,6 +139,10 @@ namespace EVENTDRIVE_ALEGADO
             if (string.IsNullOrWhiteSpace(txtSaying.Text)) errors.AppendLine("• Saying is required.");
             if (string.IsNullOrWhiteSpace(txtStatus.Text)) errors.AppendLine("• Status is required.");
             if (string.IsNullOrWhiteSpace(txtBrowse.Text)) errors.AppendLine("• Profile is required.");
+
+            DateTime birthDate = dtpBirthday.Value;
+            int calculatedAge = CalculateAge(birthDate);
+            txtAge.Text = calculatedAge.ToString();
 
 
             if (errors.Length > 0)
@@ -144,7 +187,7 @@ namespace EVENTDRIVE_ALEGADO
                 string hobbies = "";
                 if (chkBasketball.Checked) hobbies += "Basketball ";
                 if (chkVolleyball.Checked) hobbies += "Volleyball ";
-                if (chkSoccer.Checked) hobbies += "Badminton ";
+                if (chkSoccer.Checked) hobbies += "Soccer ";
 
                 string address = txtAddress.Text;
                 string email = txtEmail.Text;
@@ -156,7 +199,7 @@ namespace EVENTDRIVE_ALEGADO
                 string saying = txtSaying.Text;
                 string course = cmbCourse.Text;
                 string profile = txtBrowse.Text;
-                string status = lblStatus.Text;
+                string status = txtStatus.Text;
 
                 book.LoadFromFile(@"C:\Users\Computer\Desktop\EVENTDRIVEN\sint\EVENTDRIVE_ALEGADO\BOOKDB.xlsx");
                 Worksheet sheet = book.Worksheets[0];
@@ -305,64 +348,165 @@ namespace EVENTDRIVE_ALEGADO
         private void btnUpdate_Click(object sender, EventArgs e)
         {
             btnAdd.Visible = false;
-            string data = "";
-            string gender = "";
-            string hobbies = "";
 
-            data = txtName.Text;
-            if (radMale.Checked == true)
-            {
-                gender = radMale.Text;
-            }
-            if (radFemale.Checked == true)
-            {
-                gender = radFemale.Text;
-            }
-            if (chkBasketball.Checked)
-            {
-                hobbies += " " + chkBasketball.Text;
-            }
-            if (chkVolleyball.Checked)
-            {
-                hobbies += " " + chkVolleyball.Text;
-            }
-            if (chkSoccer.Checked)
-            {
-                hobbies += " " + chkSoccer.Text;
-            }
-            data += cmbFavColor.Text;
-            data += txtSaying.Text;
+            lblMessage.Text = "";
+            StringBuilder errors = new StringBuilder();
 
-            info[i] = data;
-            i++;
+            if (string.IsNullOrWhiteSpace(txtUsername.Text)) errors.AppendLine("• Username is required.");
+            if (string.IsNullOrWhiteSpace(txtPassword.Text)) errors.AppendLine("• Password is required.");
+            if (string.IsNullOrWhiteSpace(txtName.Text)) errors.AppendLine("• Name is required.");
+            if (!radMale.Checked && !radFemale.Checked) errors.AppendLine("• Gender is required.");
+            if (string.IsNullOrWhiteSpace(txtAddress.Text)) errors.AppendLine("• Address is required.");
+            if (string.IsNullOrWhiteSpace(txtEmail.Text)) errors.AppendLine("• Email is required.");
+            if (!dtpBirthday.Checked) errors.AppendLine("• Birthday is required.");
+            if (!chkBasketball.Checked && !chkVolleyball.Checked && !chkSoccer.Checked) errors.AppendLine("• At least one sport must be selected.");
+            if (cmbFavColor.SelectedIndex == -1) errors.AppendLine("• Favorite color must be selected.");
+            if (cmbCourse.SelectedIndex == -1) errors.AppendLine("• Course must be selected.");
+            if (string.IsNullOrWhiteSpace(txtSaying.Text)) errors.AppendLine("• Saying is required.");
+            if (string.IsNullOrWhiteSpace(txtStatus.Text)) errors.AppendLine("• Status is required.");
+            if (string.IsNullOrWhiteSpace(txtBrowse.Text)) errors.AppendLine("• Profile is required.");
 
-            //f2.update(Convert.ToInt32(lblInfo.Text), txtName.Text, gender, hobbies, cmbFavColor.Text, txtSaying.Text);
-            Workbook book = new Workbook();
-            book.LoadFromFile(@"C:\Users\Computer\Desktop\EVENTDRIVEN\sint\EVENTDRIVE_ALEGADO\BOOKDB.xlsx");
-            Worksheet sh = book.Worksheets[0];
-            int row = f2.dtgInfo.CurrentCell.RowIndex + 2;
-            sh.Range[row, 1].Value = txtName.Text;
-            sh.Range[row, 2].Value = gender;
-            sh.Range[row, 3].Value = txtAddress.Text;
-            sh.Range[row, 4].Value = txtEmail.Text;
-            sh.Range[row, 5].Value = dtpBirthday.Text;
-            sh.Range[row, 6].Value = txtAge.Text;
-            sh.Range[row, 7].Value = txtUsername.Text;
-            sh.Range[row, 8].Value = txtPassword.Text;
-            sh.Range[row, 9].Value = hobbies;
-            sh.Range[row, 10].Value = cmbFavColor.Text;
-            sh.Range[row, 11].Value = txtSaying.Text;
-            sh.Range[row, 12].Value = cmbCourse.Text;
-            sh.Range[row, 13].Value = txtStatus.Text;
+            if (errors.Length > 0)
+            {
+                lblMessage.Text = errors.ToString();
+                lblMessage.Visible = true;
+                MessageBox.Show("Please fill in all required fields!", "MISSING", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                //txtName.Clear();
+                //txtAddress.Clear();
+                //txtEmail.Clear();
+                //dtpBirthday.Checked = false;
+                //txtUsername.Clear();
+                //txtPassword.Clear();
+                //cmbFavColor.SelectedIndex = -1;
+                //cmbCourse.SelectedIndex = -1;
+                //radMale.Checked = false;
+                //radFemale.Checked = false;
+                //chkBasketball.Checked = false;
+                //chkVolleyball.Checked = false;
+                //chkSoccer.Checked = false;
+                //txtAge.Clear();
+                //txtSaying.Clear();
+                //txtBrowse.Clear();
+                return;
 
-            book.SaveToFile(@"C:\Users\Computer\Desktop\EVENTDRIVEN\sint\EVENTDRIVE_ALEGADO\BOOKDB.xlsx", ExcelVersion.Version2016);
-            DataTable dt = sh.ExportDataTable();
-            f2.dtgInfo.DataSource = dt;
+            }
+            try
+            {
+                Form4 fmr4 = new Form4();
+                Workbook book = new Workbook();
+                book.LoadFromFile(@"C:\Users\Computer\Desktop\EVENTDRIVEN\sint\EVENTDRIVE_ALEGADO\BOOKDB.xlsx");
+                Worksheet sheet = book.Worksheets[0];
+                string name = txtName.Text;
+                string gender = "";
+                if (radMale.Checked)
+                {
+                    gender = "Male";
+                }
+                if (radFemale.Checked)
+                {
+                    gender = "Female";
+                }
+
+                string hobbies = "";
+                if (chkBasketball.Checked) hobbies += "Basketball ";
+                if (chkVolleyball.Checked) hobbies += "Volleyball ";
+                if (chkSoccer.Checked) hobbies += "Soccer ";
+
+                string address = txtAddress.Text;
+                string email = txtEmail.Text;
+                string birthday = dtpBirthday.Text;
+                string age = txtAge.Text;
+                string favColor = cmbFavColor.Text;
+                string user = txtUsername.Text;
+                string pass = txtPassword.Text;
+                string saying = txtSaying.Text;
+                string course = cmbCourse.Text;
+                string profile = txtBrowse.Text;
+                string status = txtStatus.Text;
+
+                if (!IsValidEmail(email))
+                {
+                    MessageBox.Show("Invalid email format. Please enter a valid email.");
+                    return;
+                }
+
+                int ID = Convert.ToInt32(lblInfo.Text);
+                Form2 frm2 = new Form2();
+                frm2.UpdateToExcel(ID, name, gender, hobbies, address, email, birthday, age, favColor, user, pass, saying, course, status, profile);
+
+                DialogResult result = MessageBox.Show("Student details updated successfully!", "SUCCESS", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                if (result == DialogResult.OK)
+                {
+                    frm2.Show();
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+
+
+            //string data = "";
+            //string gender = "";
+            //string hobbies = "";
+
+            //data = txtName.Text;
+            //if (radMale.Checked == true)
+            //{
+            //    gender = radMale.Text;
+            //}
+            //if (radFemale.Checked == true)
+            //{
+            //    gender = radFemale.Text;
+            //}
+            //if (chkBasketball.Checked)
+            //{
+            //    hobbies += " " + chkBasketball.Text;
+            //}
+            //if (chkVolleyball.Checked)
+            //{
+            //    hobbies += " " + chkVolleyball.Text;
+            //}
+            //if (chkSoccer.Checked)
+            //{
+            //    hobbies += " " + chkSoccer.Text;
+            //}
+            //data += cmbFavColor.Text;
+            //data += txtSaying.Text;
+
+            //info[i] = data;
+            //i++;
+
+            ////f2.update(Convert.ToInt32(lblInfo.Text), txtName.Text, gender, hobbies, cmbFavColor.Text, txtSaying.Text);
+            //Workbook book = new Workbook();
+            //book.LoadFromFile(@"C:\Users\Computer\Desktop\EVENTDRIVEN\sint\EVENTDRIVE_ALEGADO\BOOKDB.xlsx");
+            //Worksheet sh = book.Worksheets[0];
+            //int row = f2.dtgInfo.CurrentCell.RowIndex + 2;
+            //sh.Range[row, 1].Value = txtName.Text;
+            //sh.Range[row, 2].Value = gender;
+            //sh.Range[row, 3].Value = txtAddress.Text;
+            //sh.Range[row, 4].Value = txtEmail.Text;
+            //sh.Range[row, 5].Value = dtpBirthday.Text;
+            //sh.Range[row, 6].Value = txtAge.Text;
+            //sh.Range[row, 7].Value = txtUsername.Text;
+            //sh.Range[row, 8].Value = txtPassword.Text;
+            //sh.Range[row, 9].Value = hobbies;
+            //sh.Range[row, 10].Value = cmbFavColor.Text;
+            //sh.Range[row, 11].Value = txtSaying.Text;
+            //sh.Range[row, 12].Value = cmbCourse.Text;
+            //sh.Range[row, 13].Value = txtStatus.Text;
+
+            //book.SaveToFile(@"C:\Users\Computer\Desktop\EVENTDRIVEN\sint\EVENTDRIVE_ALEGADO\BOOKDB.xlsx", ExcelVersion.Version2016);
+            //DataTable dt = sh.ExportDataTable();
+            //f2.dtgInfo.DataSource = dt;
         }
         private void btnDisplay_Click(object sender, EventArgs e)
         {
             f2.Show();
         }
+
 
         private void dtpBirthday_ValueChanged(object sender, EventArgs e)
         {
@@ -377,6 +521,11 @@ namespace EVENTDRIVE_ALEGADO
             {
                 txtBrowse.Text = d.FileName;    
             }
+        }
+
+        private void btnDisplay_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

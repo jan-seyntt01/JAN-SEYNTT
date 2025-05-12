@@ -44,6 +44,8 @@ namespace EVENTDRIVE_ALEGADO
             DataTable dt = sheet.ExportDataTable();
             dtgInfo.DataSource = dt;
         }
+
+
         public void showStudent(string status)
         {
             Workbook book = new Workbook();
@@ -164,50 +166,124 @@ namespace EVENTDRIVE_ALEGADO
             }
         }
 
+        public void UpdateToExcel(int ID, string name, string gender, string hobbies, string address, string email, string birthday, string age, string favColor, string user, string pass, string saying, string course, string status, string profile)
+        {
+            Workbook book = new Workbook();
+            book.LoadFromFile(@"C:\Users\Computer\Desktop\EVENTDRIVEN\sint\EVENTDRIVE_ALEGADO\BOOKDB.xlsx");
+            Worksheet sheet = book.Worksheets[0];
+
+            int id = ID + 2;
+            sheet.Range[id, 1].Value = name;
+            sheet.Range[id, 2].Value = gender;
+            sheet.Range[id, 3].Value = address;
+            sheet.Range[id, 4].Value = email;
+            sheet.Range[id, 5].Value = birthday;
+            sheet.Range[id, 6].Value = age;
+            sheet.Range[id, 7].Value = user;
+            sheet.Range[id, 8].Value = pass;
+            sheet.Range[id, 9].Value = hobbies;
+            sheet.Range[id, 10].Value = favColor;
+            sheet.Range[id, 11].Value = saying;
+            sheet.Range[id, 12].Value = course;
+            sheet.Range[id, 13].Value = status;
+            sheet.Range[id, 14].Value = profile;
+
+            book.SaveToFile(@"C:\Users\Computer\Desktop\EVENTDRIVEN\sint\EVENTDRIVE_ALEGADO\BOOKDB.xlsx");
+
+            int dgvIndex = ID;
+            dtgInfo.Rows[dgvIndex].Cells[0].Value = name;
+            dtgInfo.Rows[dgvIndex].Cells[1].Value = gender;
+            dtgInfo.Rows[dgvIndex].Cells[2].Value = address;
+            dtgInfo.Rows[dgvIndex].Cells[3].Value = email;
+            dtgInfo.Rows[dgvIndex].Cells[4].Value = birthday;
+            dtgInfo.Rows[dgvIndex].Cells[5].Value = age;
+            dtgInfo.Rows[dgvIndex].Cells[6].Value = user;
+            dtgInfo.Rows[dgvIndex].Cells[7].Value = pass;
+            dtgInfo.Rows[dgvIndex].Cells[8].Value = hobbies;
+            dtgInfo.Rows[dgvIndex].Cells[9].Value = favColor;
+            dtgInfo.Rows[dgvIndex].Cells[10].Value = saying;
+            dtgInfo.Rows[dgvIndex].Cells[11].Value = course;
+            dtgInfo.Rows[dgvIndex].Cells[11].Value = status;
+
+        }
+
         private void dtgInfo_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            
+
+            Form4 frm4 = new Form4();
+            Form1 frm1 = new Form1();
+
             int r = dtgInfo.CurrentCell.RowIndex;
-            Form1 f1 = (Form1)Application.OpenForms["Form1"];
-            f1.lblInfo.Text = r.ToString();
-            f1.txtName.Text = dtgInfo.Rows[r].Cells[0].Value.ToString();
+
+            frm1.lblInfo.Text = r.ToString();
+            string name = dtgInfo.Rows[r].Cells[0].Value.ToString();
             string gender = dtgInfo.Rows[r].Cells[1].Value.ToString();
-            if (gender == "Male")
-            {
-                f1.radMale.Checked = true;
-            }
-            else
-            {
-                f1.radFemale.Checked = true;
-            }
-            f1.txtAddress.Text = dtgInfo.Rows[r].Cells[2].Value.ToString();
-            f1.txtEmail.Text = dtgInfo.Rows[r].Cells[3].Value.ToString();
-            f1.dtpBirthday.Text = dtgInfo.Rows[r].Cells[4].Value.ToString();
-            f1.txtAge.Text = dtgInfo.Rows[r].Cells[5].Value.ToString();
-            f1.txtUsername.Text = dtgInfo.Rows[r].Cells[6].Value.ToString();
-            f1.txtPassword.Text = dtgInfo.Rows[r].Cells[7].Value.ToString();
-
+            string address = dtgInfo.Rows[r].Cells[2].Value.ToString();
+            string email = dtgInfo.Rows[r].Cells[3].Value.ToString();
+            string birthday = dtgInfo.Rows[r].Cells[4].Value.ToString();
+            string age = dtgInfo.Rows[r].Cells[5].Value.ToString();
+            string user = dtgInfo.Rows[r].Cells[6].Value.ToString();
+            string pass = dtgInfo.Rows[r].Cells[7].Value.ToString();
             string hobbies = dtgInfo.Rows[r].Cells[8].Value.ToString();
-            if (hobbies == "Basketball")
-            {
-                f1.chkBasketball.Checked = true;
-            }
-            if (hobbies == "Volleyball")
-            {
-                f1.chkVolleyball.Checked = true;
-            }
-            if (hobbies == "Soccer")
-            {
-                f1.chkSoccer.Checked = true;
-            }
+            string favColor = dtgInfo.Rows[r].Cells[9].Value.ToString();
+            string saying = dtgInfo.Rows[r].Cells[10].Value.ToString();
+            string course = dtgInfo.Rows[r].Cells[11].Value.ToString();
+            string status = dtgInfo.Rows[r].Cells[12].Value.ToString();
+            string profile = dtgInfo.Rows[r].Cells[13].Value.ToString();
 
-            f1.cmbFavColor.Text = dtgInfo.Rows[r].Cells[9].Value.ToString();
-            f1.txtSaying.Text = dtgInfo.Rows[r].Cells[10].Value.ToString();
-            f1.cmbCourse.Text = dtgInfo.Rows[r].Cells[11].Value.ToString();
-            f1.txtStatus.Text = dtgInfo.Rows[r].Cells[12].Value.ToString();
+            profile = frm4.lblProfPathHolder.Text;
 
-            f1.btnAdd.Visible = false;
-            f1.btnUpdate.Visible = true;
+
+            frm1.UpdateTextFields(r, name, gender, hobbies, address, email, birthday, age, favColor, user, pass, saying, course, status, profile);
+            frm1.btnAdd.Visible = false;
+            frm1.btnBrowse.Visible = false;
+            frm1.lblProfile.Visible = false;
+            frm1.txtBrowse.Visible = false;
+            frm1.btnUpdate.Visible = true;
+            frm1.Show();
+            this.Hide();
+
+            //int r = dtgInfo.CurrentCell.RowIndex;
+            //Form1 f1 = (Form1)Application.OpenForms["Form1"];
+            //f1.lblInfo.Text = r.ToString();
+            //f1.txtName.Text = dtgInfo.Rows[r].Cells[0].Value.ToString();
+            //string gender = dtgInfo.Rows[r].Cells[1].Value.ToString();
+            //if (gender == "Male")
+            //{
+            //    f1.radMale.Checked = true;
+            //}
+            //else
+            //{
+            //    f1.radFemale.Checked = true;
+            //}
+            //f1.txtAddress.Text = dtgInfo.Rows[r].Cells[2].Value.ToString();
+            //f1.txtEmail.Text = dtgInfo.Rows[r].Cells[3].Value.ToString();
+            //f1.dtpBirthday.Text = dtgInfo.Rows[r].Cells[4].Value.ToString();
+            //f1.txtAge.Text = dtgInfo.Rows[r].Cells[5].Value.ToString();
+            //f1.txtUsername.Text = dtgInfo.Rows[r].Cells[6].Value.ToString();
+            //f1.txtPassword.Text = dtgInfo.Rows[r].Cells[7].Value.ToString();
+
+            //string hobbies = dtgInfo.Rows[r].Cells[8].Value.ToString();
+            //if (hobbies == "Basketball")
+            //{
+            //    f1.chkBasketball.Checked = true;
+            //}
+            //if (hobbies == "Volleyball")
+            //{
+            //    f1.chkVolleyball.Checked = true;
+            //}
+            //if (hobbies == "Soccer")
+            //{
+            //    f1.chkSoccer.Checked = true;
+            //}
+
+            //f1.cmbFavColor.Text = dtgInfo.Rows[r].Cells[9].Value.ToString();
+            //f1.txtSaying.Text = dtgInfo.Rows[r].Cells[10].Value.ToString();
+            //f1.cmbCourse.Text = dtgInfo.Rows[r].Cells[11].Value.ToString();
+            //f1.txtStatus.Text = dtgInfo.Rows[r].Cells[12].Value.ToString();
+
+            //f1.btnAdd.Visible = false;
+            //f1.btnUpdate.Visible = true;
 
         }
 

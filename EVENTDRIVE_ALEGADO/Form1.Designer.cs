@@ -157,7 +157,6 @@
             this.dtpBirthday.Name = "dtpBirthday";
             this.dtpBirthday.Size = new System.Drawing.Size(200, 20);
             this.dtpBirthday.TabIndex = 8;
-            this.dtpBirthday.ValueChanged += new System.EventHandler(this.dtpBirthday_ValueChanged);
             // 
             // lblBirthday
             // 
@@ -238,7 +237,7 @@
             this.btnDisplay.TabIndex = 18;
             this.btnDisplay.Text = "Display";
             this.btnDisplay.UseVisualStyleBackColor = true;
-            this.btnDisplay.Click += new System.EventHandler(this.btnDisplay_Click);
+            //this.btnDisplay.Click += new System.EventHandler(this.btnDisplay_Click_1);
             // 
             // btnAdd
             // 
@@ -461,7 +460,6 @@
             this.btnBrowse.TabIndex = 97;
             this.btnBrowse.Text = "Browse";
             this.btnBrowse.UseVisualStyleBackColor = true;
-            this.btnBrowse.Click += new System.EventHandler(this.btnBrowse_Click);
             // 
             // txtBrowse
             // 
@@ -557,8 +555,8 @@
         public System.Windows.Forms.TextBox txtStatus;
         public System.Windows.Forms.Button btnBrowse;
         public System.Windows.Forms.TextBox txtBrowse;
-        private System.Windows.Forms.Label lblProfile;
         private System.Windows.Forms.Label lblMessage;
+        public System.Windows.Forms.Label lblProfile;
     }
 }
 
