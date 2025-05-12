@@ -237,7 +237,6 @@
             this.btnDisplay.TabIndex = 18;
             this.btnDisplay.Text = "Display";
             this.btnDisplay.UseVisualStyleBackColor = true;
-            //this.btnDisplay.Click += new System.EventHandler(this.btnDisplay_Click_1);
             // 
             // btnAdd
             // 
@@ -460,6 +459,7 @@
             this.btnBrowse.TabIndex = 97;
             this.btnBrowse.Text = "Browse";
             this.btnBrowse.UseVisualStyleBackColor = true;
+            this.btnBrowse.Click += new System.EventHandler(this.btnBrowse_Click_1);
             // 
             // txtBrowse
             // 

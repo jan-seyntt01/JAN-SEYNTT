@@ -30,7 +30,7 @@ namespace EVENTDRIVE_ALEGADO
             {
                 if (c is TextBox)
                 {
-                    if(c.Text == "")
+                    if (c.Text == "")
                     {
                         errors += c.Name + " is empty";
                     }
@@ -51,14 +51,14 @@ namespace EVENTDRIVE_ALEGADO
                 }
                 //if (c is DateTimePicker)
                 //{
-                   
+
                 //    if (c is DateTimePicker dateTimePicker)
                 //    {
-                        
+
                 //        if (dateTimePicker.Value.Date == DateTime.Today) 
                 //        {
                 //            errors += c.Name + " is not selected\n";
-                            
+
                 //        }
                 //    }
                 //}
@@ -226,7 +226,7 @@ namespace EVENTDRIVE_ALEGADO
                     MessageBox.Show("Invalid email format. Please enter a valid email.");
                     return;
                 }
-               
+
 
                 int i = sheet.Rows.Length + 1;
                 sheet.Range[i, 1].Value = txtName.Text;
@@ -517,15 +517,24 @@ namespace EVENTDRIVE_ALEGADO
         private void btnBrowse_Click(object sender, EventArgs e)
         {
             OpenFileDialog d = new OpenFileDialog();
-            if(d.ShowDialog()  == DialogResult.OK)
+            if (d.ShowDialog() == DialogResult.OK)
             {
-                txtBrowse.Text = d.FileName;    
+                txtBrowse.Text = d.FileName;
             }
         }
 
         private void btnDisplay_Click_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnBrowse_Click_1(object sender, EventArgs e)
+        {
+            OpenFileDialog d = new OpenFileDialog();
+            if (d.ShowDialog() == DialogResult.OK)
+            {
+                txtBrowse.Text = d.FileName;
+            }
         }
     }
 }

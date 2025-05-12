@@ -35,6 +35,7 @@
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.dtgInfo = new System.Windows.Forms.DataGridView();
             this.btnNew = new System.Windows.Forms.Button();
+            this.btnDeleteLogs = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dtgInfo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -100,6 +101,17 @@
             this.btnNew.UseVisualStyleBackColor = true;
             this.btnNew.Click += new System.EventHandler(this.btnNew_Click);
             // 
+            // btnDeleteLogs
+            // 
+            this.btnDeleteLogs.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDeleteLogs.Location = new System.Drawing.Point(640, 485);
+            this.btnDeleteLogs.Name = "btnDeleteLogs";
+            this.btnDeleteLogs.Size = new System.Drawing.Size(75, 23);
+            this.btnDeleteLogs.TabIndex = 17;
+            this.btnDeleteLogs.Text = "Delete";
+            this.btnDeleteLogs.UseVisualStyleBackColor = true;
+            this.btnDeleteLogs.Click += new System.EventHandler(this.btnDeleteLogs_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -107,6 +119,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 529);
+            this.Controls.Add(this.btnDeleteLogs);
             this.Controls.Add(this.btnNew);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.btnClose);
@@ -131,5 +144,6 @@
         private System.Windows.Forms.TextBox txtSearch;
         public System.Windows.Forms.DataGridView dtgInfo;
         private System.Windows.Forms.Button btnNew;
+        private System.Windows.Forms.Button btnDeleteLogs;
     }
 }

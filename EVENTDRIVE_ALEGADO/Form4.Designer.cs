@@ -86,7 +86,7 @@
             this.btnInactiveStatus = new System.Windows.Forms.Button();
             this.btnActiveStatus = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblDate = new System.Windows.Forms.Label();
             this.lblProfileName = new System.Windows.Forms.Label();
             this.picPicture = new System.Windows.Forms.PictureBox();
             this.lblProfPathHolder = new System.Windows.Forms.Label();
@@ -652,7 +652,7 @@
             this.panel1.Controls.Add(this.btnInactiveStatus);
             this.panel1.Controls.Add(this.btnActiveStatus);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.lblDate);
             this.panel1.Controls.Add(this.lblProfileName);
             this.panel1.Controls.Add(this.picPicture);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
@@ -715,15 +715,15 @@
             this.label3.TabIndex = 3;
             this.label3.Text = "Dashboard";
             // 
-            // label2
+            // lblDate
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(82, 142);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(36, 13);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "(Date)";
+            this.lblDate.AutoSize = true;
+            this.lblDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDate.Location = new System.Drawing.Point(82, 142);
+            this.lblDate.Name = "lblDate";
+            this.lblDate.Size = new System.Drawing.Size(36, 13);
+            this.lblDate.TabIndex = 2;
+            this.lblDate.Text = "(Date)";
             // 
             // lblProfileName
             // 
@@ -834,7 +834,7 @@
         private System.Windows.Forms.Button btnInactiveStatus;
         private System.Windows.Forms.Button btnActiveStatus;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblDate;
         private System.Windows.Forms.Label lblBlack;
         private System.Windows.Forms.Label lblPurple;
         private System.Windows.Forms.Label lblGreen;

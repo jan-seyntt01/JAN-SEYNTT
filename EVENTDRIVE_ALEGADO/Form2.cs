@@ -325,5 +325,27 @@ namespace EVENTDRIVE_ALEGADO
             Form1 f1 = new Form1();
             f1.Show();  
         }
+
+
+        private void btnDeleteLogs_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Are you sure you want to delete the selected info?", "Notice", MessageBoxButtons.YesNo);
+            if (result == DialogResult.Yes)
+            {
+                // Load the Excel workbook
+                Workbook book = new Workbook();
+                book.LoadFromFile(@"C:\Users\Computer\Desktop\EVENTDRIVEN\sint\EVENTDRIVE_ALEGADO\BOOKDB.xlsx");
+                Worksheet sh = book.Worksheets[0];
+                // Get the current row index from the DataGridView
+                int row = dtgInfo.CurrentCell.RowIndex + 2; // Adjust for header rows if necessary
+                // Delete the row from the worksheet
+                //int row = sh.Rows.Length;
+                sh.DeleteRow(row);
+                // Save the changes to the Excel file
+                book.SaveToFile(@"C:\Users\Computer\Desktop\EVENTDRIVEN\sint\EVENTDRIVE_ALEGADO\BOOKDB.xlsx", ExcelVersion.Version2013);
+                // Optionally, refresh the DataGridView to reflect the changes
+                //LoadDataIntoDataGridView(); // Implement this method to reload data from the Excel file
+            }
+        }
     }
 }

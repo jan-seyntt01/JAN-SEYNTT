@@ -48,6 +48,7 @@ namespace EVENTDRIVE_ALEGADO
             lblBSHMCount.Text = showCount(12, "BSHM").ToString();
             lblBSTMCount.Text = showCount(12, "BSTM").ToString();
 
+            lblDate.Text = DateTime.Now.ToString("MM/dd/yyyy");
             lblProfileName.Text = DisplayIt.DisplayName;
         }
        
